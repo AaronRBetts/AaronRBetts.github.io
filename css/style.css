@@ -1268,20 +1268,22 @@ body.offcanvas {
     zoom: 1;
     *display: inline;
     width: 30px;
-    height: 2px;
-    color: #000;
+    height: 4px;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.6);
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: #000;
+    background: rgba(0, 0, 0, 0.6);
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
     .colorlib-nav-toggle i::before, .colorlib-nav-toggle i::after {
       content: '';
       width: 30px;
-      height: 2px;
-      background: #000;
+      height: 4px;
+      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.6);
       position: absolute;
       left: 0;
       -webkit-transition: 0.2s;
@@ -1333,12 +1335,17 @@ body.offcanvas {
 
 .colorlib-nav-toggle {
   position: fixed;
-  left: -5px;
+  left: 0px;
   top: 0px;
   z-index: 9999;
   cursor: pointer;
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 0 0 10px 0;
   opacity: 1;
   visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
