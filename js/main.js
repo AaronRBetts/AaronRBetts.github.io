@@ -2,7 +2,19 @@
 	
 	'use strict';
 
-
+	let dictionaryApi = "https://od-api.oxforddictionaries.com/api/v2/entries/en-gb/TL%3BDR?fields=definitions&strictMatch=false"
+	fetch(dictionaryApi, {
+		headers: {
+			"Accept": "application/json",
+			"app_id": "d602aee9",
+			"app_key": "df7546d2c1451e55bdd8f6f8d0f367ec"
+		}
+	}) 
+  .then(response => response.json())
+  .then(data => console.log(data))
+	.catch(function() {
+			// This is where you run code if the server returns any errors
+	});
 
 	var isMobile = {
 		Android: function() {
