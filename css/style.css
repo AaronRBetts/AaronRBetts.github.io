@@ -286,6 +286,10 @@ figure {
       #colorlib-hero .flexslider .flex-control-nav li {
         display: block;
         margin-bottom: 10px; }
+        #colorlib-hero .flexslider .flex-control-nav li:first-child::before {
+          font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0d8"; }
+        #colorlib-hero .flexslider .flex-control-nav li:last-child::after {
+          font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0d7"; }
         #colorlib-hero .flexslider .flex-control-nav li a {
           background: rgba(0, 0, 0, 0.5);
           -webkit-box-shadow: none;
@@ -648,7 +652,11 @@ body.offcanvas {
   -ms-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
   -o-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
   box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  border-bottom: 2px solid #2c98f0; }
+  border-bottom: 2px solid #2c98f0;
+  height: 270px;
+  transition: height 0.3s ease-in-out; }
+  .services:hover {
+    height: 300px;  }
   .services .icon2 {
     display: block;
     margin-bottom: 20px; }
@@ -708,6 +716,7 @@ body.offcanvas {
       right: 0;
       content: ''; }
     .services .icon:before {
+      display: none;
       top: -30px;
       width: 0;
       height: 0;
