@@ -91,6 +91,19 @@ figure {
   width: 100%;
   overflow: hidden;
   position: relative; }
+#myform {
+  display: flex;
+}
+#searchArea {
+  height: 100%;
+  outline: none;
+  font-size: 24px;
+  width: 70%;
+}
+#searchBtn {
+  height: auto;
+  margin: 0;
+}
 
 #colorlib-aside {
   padding-top: 3em;
@@ -465,13 +478,14 @@ body.offcanvas {
   margin-left: 30px;
   font-size: 16px;
   font-weight: lighter;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   font-style: italic;
 }
 
 .desc h1:hover .heading-tooltip {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .about-img {
@@ -1392,7 +1406,9 @@ body.offcanvas {
   .col-xxs-12 {
     float: none;
     width: 100%; } }
-
+.container-wrap #colorlib-main {
+  border-bottom: 2px solid black;
+}
 .row-bottom-padded-lg {
   padding-bottom: 7em; }
   @media screen and (max-width: 768px) {
