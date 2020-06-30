@@ -34,8 +34,8 @@
 
 	});
 
-	function search(event) {
-		event.preventDefault();
+	function search(event = '') {
+		if (event) event.preventDefault();
 		var word = document.getElementById("searchArea").value;
 		settings.url = "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=" + word;
 		$.ajax(settings).done(function (response) {
@@ -261,6 +261,7 @@
 			animation: "fade",
 			slideshowSpeed: 5000,
 			directionNav: true,
+			pauseOnHover: true,
 			start: function () {
 				setTimeout(function () {
 					$('.slider-text').removeClass('animated fadeInUp');
@@ -302,7 +303,6 @@
 				$("#sticky_item").trigger("sticky_kit:detach");
 				$("#sticky_item").trigger("sticky_kit:unstick");
 
-				$("#sticky_item").stick_in_parent();
 			}
 
 
@@ -312,7 +312,6 @@
 
 		$('.sticky-parent').css('height', h);
 
-		$("#sticky_item").stick_in_parent();
 
 	};
 
@@ -352,6 +351,7 @@
 		sliderMain();
 		stickyFunction();
 		owlCrouselFeatureSlide();
+		search();
 	});
 
 

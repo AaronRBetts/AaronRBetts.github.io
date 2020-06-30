@@ -331,6 +331,10 @@ figure {
         padding: 2.5em;
         position: relative; }
         @media screen and (max-width: 768px) {
+          #colorlib-hero .flexslider .flex-control-nav li:first-child::before {
+            content: ""; }
+          #colorlib-hero .flexslider .flex-control-nav li:last-child::after {
+            content: ""; }
           #colorlib-hero .flexslider .slider-text > .slider-text-inner {
             text-align: center; } }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
