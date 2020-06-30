@@ -52,6 +52,34 @@
 		});
 	}
 
+	function wakaTime() {
+		$.ajax({
+			type: 'GET',
+			url: 'https://wakatime.com/share/@b2108310-2afb-4702-8177-c3c65872af2b/cc433291-035e-44af-9074-1dae5964395f.json',
+			dataType: 'jsonp',
+			success: function(response) {
+				console.log(response.data[23].grand_total.hours);
+				let totalSecs = 0;
+				response.data.forEach((node) => {
+					if (node.grand_total.total_seconds) {
+						totalSecs += node.grand_total.total_seconds;
+					}
+				})
+				let totalHours = totalSecs / 3600;
+				document.getElementById('hours-coded').setAttribute("data-to", totalHours);
+				counter();
+			},
+		});
+		$.ajax({
+			type: 'GET',
+			url: 'https://wakatime.com/share/@b2108310-2afb-4702-8177-c3c65872af2b/eeafbeb3-e0d4-4c25-b69b-0cc367462710.json',
+			dataType: 'jsonp',
+			success: function(response) {
+				console.log(response.data);
+			},
+		});
+	}
+
 	var isMobile = {
 		Android: function () {
 			return navigator.userAgent.match(/Android/i);
@@ -340,7 +368,7 @@
 	// Document on load.
 	$(function () {
 		fullHeight();
-		counter();
+		wakaTime();
 		counterWayPoint();
 		contentWayPoint();
 		burgerMenu();
@@ -349,7 +377,6 @@
 		// navActive();
 		navigationSection();
 		// windowScroll();
-
 
 		mobileMenuOutsideClick();
 		sliderMain();
