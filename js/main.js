@@ -315,6 +315,10 @@
 
 	};
 
+	var stopLoading = function() {
+		document.getElementById('colorlib-hero').style.background = '#fff';
+	}
+
 	var owlCrouselFeatureSlide = function () {
 		$('.owl-carousel').owlCarousel({
 			animateOut: 'fadeOut',
@@ -352,6 +356,7 @@
 		stickyFunction();
 		owlCrouselFeatureSlide();
 		search();
+		stopLoading();
 	});
 
 
