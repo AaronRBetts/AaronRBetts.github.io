@@ -104,6 +104,24 @@ figure {
   height: auto;
   margin: 0;
 }
+.bgContainer {
+  top: 0;
+  width: 120%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateY(-60%) translateX(-40%);
+  grid-gap: 50px;
+}
+.bgContainer img {
+  -webkit-box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
+box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
+transition: transform 0.4s ease-in-out;
+}
+.bgContainer img:hover{
+  transform: translate(-40px, -40px);
+}
 
 #colorlib-aside {
   padding-top: 3em;
@@ -293,7 +311,7 @@ figure {
       width: 100%;
       padding: 0 1em; } }
 .slide{
-  background-image: url(../images/mockup.png);
+  /* background-image: url(../images/mockup.png); */
 }
 #colorlib-hero {
   min-height: 500px;
