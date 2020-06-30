@@ -117,12 +117,7 @@ figure {
   -webkit-box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
 -moz-box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
 box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
-transition: transform 0.4s ease-in-out;
 }
-.bgContainer img:hover{
-  transform: translate(-40px, -40px);
-}
-
 #colorlib-aside {
   padding-top: 3em;
   padding-bottom: 40px;
