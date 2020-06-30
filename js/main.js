@@ -53,12 +53,13 @@
 	}
 
 	function wakaTime() {
+		let labelArr = []
+		let valueArr = []
 		$.ajax({
 			type: 'GET',
-			url: 'https://wakatime.com/share/@b2108310-2afb-4702-8177-c3c65872af2b/cc433291-035e-44af-9074-1dae5964395f.json',
+			url: 'https://wakatime.com/share/@b2108310-2afb-4702-8177-c3c65872af2b/fa185ac6-3105-478d-80c8-5fd77504d802.json',
 			dataType: 'jsonp',
 			success: function(response) {
-				console.log(response.data[23].grand_total.hours);
 				let totalSecs = 0;
 				response.data.forEach((node) => {
 					if (node.grand_total.total_seconds) {
@@ -76,6 +77,32 @@
 			dataType: 'jsonp',
 			success: function(response) {
 				console.log(response.data);
+				response.data.forEach((node) => {
+					if (node.name) {
+						labelArr.push(
+							node.name
+						)
+						valueArr.push(
+							node.percent
+						)
+					}
+				})
+				// new Chart(document.getElementById("wakaTimeChart"), {
+				// 	type: 'pie',
+				// 	data: {
+				// 		labels: labelArr,
+				// 		datasets: [{
+				// 			label: "Population (millions)",
+				// 			backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+				// 			data: valueArr
+				// 		}]
+				// 	},
+				// 	options: {
+				// 		legend: {
+				// 				display: false
+				// 		},
+				// 	}
+				// });
 			},
 		});
 	}
