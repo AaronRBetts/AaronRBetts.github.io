@@ -28,7 +28,7 @@
 	$.ajax(settings).done(function (response) {
 		//document.getElementById("response").innerHTML = response.list[1];
 		console.log(response.list[1]);
-		document.getElementById("entryLink").src = response.list[1].permalink;
+		document.getElementById("entryLink").href = response.list[1].permalink;
 		document.getElementById("entryLink").innerHTML = response.list[1].permalink;
 		document.getElementById("entryDef").innerHTML = response.list[1].definition;
 
