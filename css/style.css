@@ -109,8 +109,8 @@ figure {
   width: 120%;
   position: absolute;
   display: grid;
-  grid-template-columns: auto auto auto;
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateY(-60%) translateX(-40%);
+  grid-template-columns: auto auto auto auto;
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateY(-60%) translateX(-20%);
   grid-gap: 50px;
 }
 .bgContainer img {
