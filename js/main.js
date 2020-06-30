@@ -28,7 +28,9 @@
 	$.ajax(settings).done(function (response) {
 		//document.getElementById("response").innerHTML = response.list[1];
 		console.log(response.list[1]);
-		document.getElementById("heading-tooltip").innerHTML = response.list[1].definition;
+		document.getElementById("entryLink").src = response.list[1].permalink;
+		document.getElementById("entryLink").innerHTML = response.list[1].permalink;
+		document.getElementById("entryDef").innerHTML = response.list[1].definition;
 
 	});
 
@@ -43,7 +45,9 @@
 			}
 			else {
 				console.log(response.list[1]);
-				document.getElementById("heading-tooltip").innerHTML = response.list[1].definition;
+				document.getElementById("entryLink").src = response.list[1].permalink;
+				document.getElementById("entryLink").innerHTML = response.list[1].permalink;
+				document.getElementById("entryDef").innerHTML = response.list[1].definition;
 			}
 		});
 	}
