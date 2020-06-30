@@ -255,6 +255,33 @@ figure {
   max-width: 1170px;
   margin: 0 auto; } */
 
+  .desc {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .3);   
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, .5);
+    overflow: hidden;
+    padding: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    .desc {
+      background: rgba(255, 255, 255, .8);
+    }
+  }
+  .desc:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .9);
+    filter: blur(80px);
+    margin: -20px;
+}
 #colorlib-main {
   width: calc(100% - 300px);
   float: right;
@@ -265,7 +292,9 @@ figure {
     #colorlib-main {
       width: 100%;
       padding: 0 1em; } }
-
+.slide{
+  background-image: url(../images/mockup.png);
+}
 #colorlib-hero {
   min-height: 500px;
   background: #fff url(../images/loader.gif) no-repeat center center;
