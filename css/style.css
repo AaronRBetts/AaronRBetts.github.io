@@ -289,7 +289,7 @@ box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
   max-width: 1170px;
   margin: 0 auto; } */
 
-  .desc {
+  .js-fullheight .desc {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .3);   
     border-radius: 5px;
     position: relative;
