@@ -105,18 +105,39 @@ figure {
   margin: 0;
 }
 .bgContainer {
-  top: 0;
-  width: 120%;
   position: absolute;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateY(-60%) translateX(-20%);
-  grid-gap: 50px;
+  grid-template-areas: 
+            ". . a a . ."
+            ". b b c c ."
+            "d d e e f f";
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateY(-80%);
+  grid-gap: 5%;
+  z-index: 999;
 }
 .bgContainer img {
+  min-width: 180px;
   -webkit-box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
 -moz-box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
 box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
+}
+#bg1{
+  grid-area: a;
+}
+#bg2{
+  grid-area: b;
+}
+#bg3{
+  grid-area: c;
+}
+#bg4{
+  grid-area: d;
+}
+#bg5{
+  grid-area: e;
+}
+#bg6{
+  grid-area: f;
 }
 #colorlib-aside {
   padding-top: 3em;
