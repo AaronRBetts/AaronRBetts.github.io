@@ -104,6 +104,13 @@ figure {
   height: auto;
   margin: 0;
 }
+.site-info {
+  z-index: 999;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 20px;
+}
 .bgContainer {
   position: absolute;
   display: grid;
