@@ -132,8 +132,8 @@ figure {
   background-size: contain;
   width: 400px;
   height: 200px;
-  max-width: 40vw;
-  max-height: 20vw;
+  max-width: 30vw;
+  max-height: 15vw;
   -webkit-box-shadow: 1px 1px 0px #ccc,
   2px 2px 0px #ccc,
   3px 3px 0px #ccc,
@@ -185,6 +185,11 @@ box-shadow: 1px 1px 0px #ccc,
   color: black;
   font-family: "Quicksand", Arial, sans-serif;
 }
+@media screen and (max-width: 768px) {
+  .bgContainer div a span {
+    font-size: 14px;
+  }
+}
 #bg1{
   grid-area: a;
   background-image: url(../images/b1.png);
@@ -208,9 +213,6 @@ box-shadow: 1px 1px 0px #ccc,
 #bg6{
   grid-area: f;
   background-image: url(../images/b6.png);
-}
-.bgText {
-  margin: auto;
 }
 #colorlib-aside {
   padding-top: 3em;
