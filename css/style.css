@@ -113,7 +113,6 @@ figure {
             "d d e e f f";
   transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateY(-80%);
   grid-gap: 5%;
-  z-index: 999;
 }
 .bgContainer img {
   min-width: 180px;
