@@ -112,6 +112,9 @@ figure {
   padding-right: 20px;
 }
 .bgContainer {
+  top: 0;
+  right: 0;
+  z-index: 8;
   position: absolute;
   display: grid;
   grid-template-areas: 
@@ -121,8 +124,16 @@ figure {
   transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateY(-80%);
   grid-gap: 5%;
 }
-.bgContainer img {
-  min-width: 180px;
+.bgContainer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  width: 400px;
+  height: 200px;
+  max-width: 40vw;
+  max-height: 20vw;
   -webkit-box-shadow: 1px 1px 0px #ccc,
   2px 2px 0px #ccc,
   3px 3px 0px #ccc,
@@ -157,23 +168,49 @@ box-shadow: 1px 1px 0px #ccc,
 10px 10px 0px #ccc,
 30px 30px 21px 1px rgba(0,0,0,0.5);
 }
+.bgContainer div a {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+.bgContainer div:hover a {
+  opacity: 1;
+}
+.bgContainer div a span {
+  font-size: 30px;
+  margin: auto;
+  color: black;
+  font-family: "Quicksand", Arial, sans-serif;
+}
 #bg1{
   grid-area: a;
+  background-image: url(../images/b1.png);
 }
 #bg2{
   grid-area: b;
+  background-image: url(../images/b2.png);
 }
 #bg3{
   grid-area: c;
+  background-image: url(../images/b3.png);
 }
 #bg4{
   grid-area: d;
+  background-image: url(../images/b4.png);
 }
 #bg5{
   grid-area: e;
+  background-image: url(../images/b5.png);
 }
 #bg6{
   grid-area: f;
+  background-image: url(../images/b6.png);
+}
+.bgText {
+  margin: auto;
 }
 #colorlib-aside {
   padding-top: 3em;
@@ -328,7 +365,6 @@ box-shadow: 1px 1px 0px #ccc,
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .3);   
     border-radius: 5px;
     position: relative;
-    z-index: 1;
     background: rgba(255, 255, 255, .5);
     overflow: hidden;
     padding: 10px;
