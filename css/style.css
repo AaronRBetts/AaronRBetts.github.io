@@ -117,9 +117,39 @@ figure {
 }
 .bgContainer img {
   min-width: 180px;
-  -webkit-box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
--moz-box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
-box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 0px #ccc,
+  2px 2px 0px #ccc,
+  3px 3px 0px #ccc,
+  4px 4px 0px #ccc,
+  5px 5px 0px #ccc,
+  6px 6px 0px #ccc,
+  7px 7px 0px #ccc,
+  8px 8px 0px #ccc,
+  9px 9px 0px #ccc,
+  10px 10px 0px #ccc,
+  30px 30px 21px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 1px 1px 0px #ccc,
+2px 2px 0px #ccc,
+3px 3px 0px #ccc,
+4px 4px 0px #ccc,
+5px 5px 0px #ccc,
+6px 6px 0px #ccc,
+7px 7px 0px #ccc,
+8px 8px 0px #ccc,
+9px 9px 0px #ccc,
+10px 10px 0px #ccc,
+30px 30px 21px 1px rgba(0,0,0,0.5);
+box-shadow: 1px 1px 0px #ccc,
+2px 2px 0px #ccc,
+3px 3px 0px #ccc,
+4px 4px 0px #ccc,
+5px 5px 0px #ccc,
+6px 6px 0px #ccc,
+7px 7px 0px #ccc,
+8px 8px 0px #ccc,
+9px 9px 0px #ccc,
+10px 10px 0px #ccc,
+30px 30px 21px 1px rgba(0,0,0,0.5);
 }
 #bg1{
   grid-area: a;
@@ -284,10 +314,6 @@ box-shadow: 30px 30px 21px 1px rgba(0,0,0,0.5);
             text-decoration: none;
             outline: none;
             color: #2c98f0; }
-
-/* .container-wrap {
-  max-width: 1170px;
-  margin: 0 auto; } */
 
   .js-fullheight .desc {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .3);   
