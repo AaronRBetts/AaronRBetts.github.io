@@ -17,7 +17,7 @@
 	var settings = {
 		"async": true,
 		"crossDomain": true,
-		"url": "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=kiaora",
+		"url": "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=kia%20ora",
 		"method": "GET",
 		"headers": {
 			"x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com",
@@ -27,7 +27,6 @@
 
 	$.ajax(settings).done(function (response) {
 		//document.getElementById("response").innerHTML = response.list[1];
-		console.log(response.list[1]);
 		document.getElementById("entryLink").href = response.list[1].permalink;
 		document.getElementById("entryLink").innerHTML = response.list[1].permalink;
 		document.getElementById("entryDef").innerHTML = response.list[1].definition;
@@ -67,7 +66,7 @@
 					}
 				})
 				let totalHours = totalSecs / 3600;
-				document.getElementById('hours-coded').setAttribute("data-to", totalHours);
+				//document.getElementById('hours-coded').setAttribute("data-to", totalHours);
 				counter();
 			},
 		});
