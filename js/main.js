@@ -17,7 +17,7 @@
 	var settings = {
 		"async": true,
 		"crossDomain": true,
-		"url": "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=tl;dr",
+		"url": "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=kiaora",
 		"method": "GET",
 		"headers": {
 			"x-rapidapi-host": "mashape-community-urban-dictionary.p.rapidapi.com",
