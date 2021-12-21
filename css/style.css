@@ -113,7 +113,7 @@ figure {
 }
 .bgContainer {
   top: 0;
-  right: 0;
+  right: 5vw;
   z-index: 8;
   position: absolute;
   display: grid;
@@ -130,8 +130,8 @@ figure {
   justify-content: center;
   align-items: center;
   background-size: contain;
-  width: 400px;
-  height: 200px;
+  width: 426px;
+  height: 240px;
   max-width: 30vw;
   max-height: 15vw;
   -webkit-box-shadow: 1px 1px 0px #ccc,
@@ -587,12 +587,6 @@ body.offcanvas {
       padding-top: 5em;
       padding-bottom: 8em; } }
 
-.colorlib-about {
-  background-image: url("../images/travel.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
 
 .author-img {
   background-size: cover;
