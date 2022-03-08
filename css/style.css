@@ -200,11 +200,11 @@ box-shadow: 1px 1px 0px #ccc,
 }
 #bg3{
   grid-area: c;
-  background-image: url(../images/b3.png);
+  background-image: url(../images/b4.png);
 }
 #bg4{
   grid-area: d;
-  background-image: url(../images/b4.png);
+  background-image: url(../images/b3.png);
 }
 #bg5{
   grid-area: e;
@@ -1072,7 +1072,7 @@ body.offcanvas {
       color: #2c98f0; }
 
 .project {
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
@@ -1433,13 +1433,16 @@ body.offcanvas {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
-  border-radius: 0; }
-  .form-control:active, .form-control:focus {
+  border-radius: 0; 
+}
+  
+.form-control:active, .form-control:focus {
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-color: transparent;
-    background: #f0f0f0; }
+    background: #f0f0f0; 
+}
 
 #message {
   height: 130px; }
