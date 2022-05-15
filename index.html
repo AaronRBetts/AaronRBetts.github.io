@@ -54,7 +54,7 @@
 				<div class="text-center">
 					<div class="author-img" style="background-image: url(https://i.imgur.com/szvWdpb.png);"></div>
 					<h1 id="portfolio-logo"><a href="index.html"></a></h1>
-					<span class="position"><a href="https://reactjs.org/">React</a> focused <strong>Web Developer</strong></span>
+					
 				</div>
 				<nav id="portfolio-main-menu" role="navigation" class="navbar">
 					<div id="navbar" class="collapse">
@@ -115,7 +115,9 @@
 											<div class="slider-text-inner js-fullheight">
 												<div class="desc">
 													<h1>Aaron Betts</h1>
-													<h2>Website Developer</h2>
+													<h2>Website Developer<a class="btn btn-primary btn-hire"
+														href="#contact" data-nav-section="contact">Work with me</a>
+														</h2>
 													<p><a class="btn btn-primary btn-cv"
 															href="https://docs.google.com/document/d/1sVVBGVCyCowGYl2F13Vrh7AgJJIRAjUBA7XbBmRr-Ew/edit?usp=sharing"
 															target="_blank">View CV <i class="fas fa-file"></i></a></p>
@@ -245,7 +247,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 								<div class="project" style="background-image: url(https://i.imgur.com/YzkqP4k.png);">
 									<div class="desc">
 										<div class="con">
@@ -264,7 +266,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 								<div class="project" style="background-image: url(https://i.imgur.com/Umm5d1u.png);">
 									<div class="desc">
 										<div class="con">
@@ -285,7 +287,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 								<div class="project" style="background-image: url(https://i.imgur.com/GcD4sDE.png);">
 									<div class="desc">
 										<div class="con">
@@ -328,15 +330,22 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="col-md-12">
+									<div class="col-sm-12 col-md-6">
 										<div class="about-desc">
 											<span class="heading-meta">About Me</span>
 											<h2 class="portfolio-heading">From New Zealand to Finland</h2>
 											<p><strong>Hi I'm Aaron Betts</strong><br /> I traveled across the world from my birthplace in Auckland, New Zealand to my new home in Tampere, Finland where I am currently living.<br /><br />
-												I'm a passionate website developer, focusing on applications built using <a href="https://reactjs.org/">React</a>, I am also the co-founder of <a href="https://Diatarrat.fi/">Diatarrat.fi</a> and a <a href="https://fi.wikipedia.org/wiki/Padel">Padel</a> coach for Padel Tampere. <br />
-												My websites are optimised for both desktop and mobile devices.<br />
-												<br />If you'd like to see my work or get in touch, <b>keep scrolling.</b><br /> </p>
+												I'm a passionate website developer, focusing on applications built using <a href="https://reactjs.org/">React</a> and the <a href="https://www.mongodb.com/mern-stack">MERN stack</a>.<br />
+												<br />
+												In my free time, I am a passionate about the sport Padel. I am an active player and a coach for Padel Tampere.<br /><br />
+												<br />Whether you have a business, or even just an idea, I'd love to hear about it and <b>design a custom website tailored to your target audience, at a fraction of the cost of a large agency.</b><br /><br />
+												<a class="btn btn-primary btn-hire"
+												href="#contact" data-nav-section="contact">Work with me</a>
+											</p>
 										</div>
+									</div>
+									<div class="col-sm-12 col-md-6">
+										<img src=https://i.imgur.com/echAf9T.jpg/>
 									</div>
 								</div>
 							</div>
@@ -419,35 +428,6 @@
 					</div>
 				</section>
 
-				<div id="portfolio-counter" class="portfolio-counters" style="background-image: url(https://i.imgur.com/06aXtmh.jpg);"
-					data-stellar-background-ratio="0.5">
-					<div class="overlay"></div>
-					<div class="portfolio-narrow-content">
-						<div class="row">
-						</div>
-						<div class="row">
-							<div class="col-md-12 text-center animate-box">
-								<span class="portfolio-counter js-counter" data-from="0" data-to="13" data-speed="5000"
-									data-refresh-interval="50"></span>
-								<span class="portfolio-counter-label">Completed Projects (so far)</span>
-							</div>
-							<!-- <div class="col-md-4 text-center animate-box">
-								<span id="hours-coded" class="portfolio-counter js-counter" data-from="0" data-to="0"
-									data-speed="5000" data-refresh-interval="50"></span>
-								<span class="portfolio-counter-label">Hours coded (past week)</span>
-							</div> -->
-							<!-- <div class="col-md-6 text-center animate-box">
-								<span class="portfolio-counter js-counter" data-from="0" data-to="9999" data-speed="5000"
-									data-refresh-interval="50"></span>
-								<span class="portfolio-counter-label">Cups of coffee</span>
-							</div> -->
-							<!-- <div class="col-md-3 text-center animate-box">
-								<canvas id="wakaTimeChart"></canvas>
-								<span class="portfolio-counter-label">Portion of time spent</span>
-							</div> -->
-						</div>
-					</div>
-				</div>
 
 				<!-- <section class="portfolio-education" data-section="education">
 				<div class="portfolio-narrow-content">
@@ -634,6 +614,35 @@
 
 				
 				<section class="portfolio-contact" data-section="contact">
+					<div id="portfolio-counter" class="portfolio-counters" style="background-image: url(https://i.imgur.com/06aXtmh.jpg);"
+						data-stellar-background-ratio="0.5">
+						<div class="overlay"></div>
+						<div class="portfolio-narrow-content">
+							<div class="row">
+							</div>
+							<div class="row">
+								<div class="col-md-12 text-center animate-box">
+									<span class="portfolio-counter js-counter" data-from="0" data-to="13" data-speed="5000"
+										data-refresh-interval="50"></span>
+									<span class="portfolio-counter-label">Completed Projects (so far)</span>
+								</div>
+								<!-- <div class="col-md-4 text-center animate-box">
+									<span id="hours-coded" class="portfolio-counter js-counter" data-from="0" data-to="0"
+										data-speed="5000" data-refresh-interval="50"></span>
+									<span class="portfolio-counter-label">Hours coded (past week)</span>
+								</div> -->
+								<!-- <div class="col-md-6 text-center animate-box">
+									<span class="portfolio-counter js-counter" data-from="0" data-to="9999" data-speed="5000"
+										data-refresh-interval="50"></span>
+									<span class="portfolio-counter-label">Cups of coffee</span>
+								</div> -->
+								<!-- <div class="col-md-3 text-center animate-box">
+									<canvas id="wakaTimeChart"></canvas>
+									<span class="portfolio-counter-label">Portion of time spent</span>
+								</div> -->
+							</div>
+						</div>
+					</div>
 					<div class="portfolio-narrow-content">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"

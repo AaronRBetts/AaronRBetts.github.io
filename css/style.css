@@ -51,6 +51,10 @@ a {
     outline: none;
     text-decoration: none !important; }
 
+.svg-inline--fa {
+  color: #f0ad4e;
+}
+
 p {
   margin-bottom: 1.5em; }
 
@@ -112,8 +116,8 @@ figure {
   padding-right: 20px;
 }
 .bgContainer {
-  top: 0;
-  right: 5vw;
+  top: -1vh;
+  right: 1vw;
   z-index: 8;
   position: absolute;
   display: grid;
@@ -125,69 +129,86 @@ figure {
   grid-gap: 5%;
 }
 .bgContainer div {
+  transition: opacity 0.2s ease-in-out, box-shadow 0.1s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-size: contain;
-  width: 426px;
-  height: 240px;
+  width: 340px;
+  height: 200px;
   max-width: 30vw;
   max-height: 15vw;
   -webkit-box-shadow: 1px 1px 0px #ccc,
-  2px 2px 0px #ccc,
-  3px 3px 0px #ccc,
-  4px 4px 0px #ccc,
-  5px 5px 0px #ccc,
-  6px 6px 0px #ccc,
-  7px 7px 0px #ccc,
-  8px 8px 0px #ccc,
-  9px 9px 0px #ccc,
-  10px 10px 0px #ccc,
+  2px 2px 0px rgba(204, 204, 204, 1),
+  3px 3px 0px rgba(204, 204, 204, 1),
+  4px 4px 0px rgba(204, 204, 204, 1),
+  5px 5px 0px rgba(204, 204, 204, 1),
+  6px 6px 0px rgba(204, 204, 204, 1),
+  7px 7px 0px rgba(204, 204, 204, 1),
+  8px 8px 0px rgba(204, 204, 204, 1),
+  9px 9px 0px rgba(204, 204, 204, 1),
+  10px 10px 0px rgba(204, 204, 204, 1),
   30px 30px 21px 1px rgba(0,0,0,0.5);
--moz-box-shadow: 1px 1px 0px #ccc,
-2px 2px 0px #ccc,
-3px 3px 0px #ccc,
-4px 4px 0px #ccc,
-5px 5px 0px #ccc,
-6px 6px 0px #ccc,
-7px 7px 0px #ccc,
-8px 8px 0px #ccc,
-9px 9px 0px #ccc,
-10px 10px 0px #ccc,
+-moz-box-shadow: 1px 1px 0px rgba(204, 204, 204, 1),
+2px 2px 0px rgba(204, 204, 204, 1),
+3px 3px 0px rgba(204, 204, 204, 1),
+4px 4px 0px rgba(204, 204, 204, 1),
+5px 5px 0px rgba(204, 204, 204, 1),
+6px 6px 0px rgba(204, 204, 204, 1),
+7px 7px 0px rgba(204, 204, 204, 1),
+8px 8px 0px rgba(204, 204, 204, 1),
+9px 9px 0px rgba(204, 204, 204, 1),
+10px 10px 0px rgba(204, 204, 204, 1),
 30px 30px 21px 1px rgba(0,0,0,0.5);
-box-shadow: 1px 1px 0px #ccc,
-2px 2px 0px #ccc,
-3px 3px 0px #ccc,
-4px 4px 0px #ccc,
-5px 5px 0px #ccc,
-6px 6px 0px #ccc,
-7px 7px 0px #ccc,
-8px 8px 0px #ccc,
-9px 9px 0px #ccc,
-10px 10px 0px #ccc,
+box-shadow: 1px 1px 0px rgba(204, 204, 204, 1),
+2px 2px 0px rgba(204, 204, 204, 1),
+3px 3px 0px rgba(204, 204, 204, 1),
+4px 4px 0px rgba(204, 204, 204, 1),
+5px 5px 0px rgba(204, 204, 204, 1),
+6px 6px 0px rgba(204, 204, 204, 1),
+7px 7px 0px rgba(204, 204, 204, 1),
+8px 8px 0px rgba(204, 204, 204, 1),
+9px 9px 0px rgba(204, 204, 204, 1),
+10px 10px 0px rgba(204, 204, 204, 1),
 30px 30px 21px 1px rgba(0,0,0,0.5);
+opacity: 1;
 }
 .bgContainer div a {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.2s ease-in-out, background-color 0.2s ease;
   height: 100%;
   width: 100%;
   background-color: white;
   display: flex;
 }
 .bgContainer div:hover a {
+  background-color: rgba(255, 255, 255, 0.0);
   opacity: 1;
 }
+.bgContainer div:hover {
+  background: rgba(255, 255, 255, 0.0) !important;
+  box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.0),
+  2px 2px 0px rgba(255, 255, 255, 0.0),
+  3px 3px 0px rgba(255, 255, 255, 0.0),
+  4px 4px 0px rgba(255, 255, 255, 0.0),
+  5px 5px 0px rgba(255, 255, 255, 0.0),
+  6px 6px 0px rgba(255, 255, 255, 0.0),
+  7px 7px 0px rgba(255, 255, 255, 0.0),
+  8px 8px 0px rgba(255, 255, 255, 0.0),
+  9px 9px 0px rgba(255, 255, 255, 0.0),
+  10px 10px 0px rgba(255, 255, 255, 0.0),
+  30px 30px 21px 1px rgba(255,255,255,0.0);
+}
 .bgContainer div a span {
-  font-size: 30px;
+  font-size: 3rem;
   margin: auto;
   color: black;
   font-family: "Quicksand", Arial, sans-serif;
 }
 @media screen and (max-width: 768px) {
   .bgContainer div a span {
-    font-size: 14px;
+    font-size: 2rem;
   }
 }
 #bg1{
@@ -221,14 +242,17 @@ box-shadow: 1px 1px 0px #ccc,
   left: 0;
   width: 300px;
   position: fixed;
-  z-index: 1001;
-  background: white;
+  z-index: 6;
+  /* background-position: center; */
+      background: url(https://i.imgur.com/yLCa1QW.png);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   @media screen and (max-width: 768px) {
     #portfolio-aside {
       width: 300px;
+      background-repeat: round;
+      background: url(https://i.imgur.com/yLCa1QW.png);
       -moz-transform: translateX(-300px);
       -webkit-transform: translateX(-300px);
       -ms-transform: translateX(-300px);
@@ -236,6 +260,7 @@ box-shadow: 1px 1px 0px #ccc,
       transform: translateX(-300px);
       padding-top: 4em; } }
   #portfolio-aside .author-img {
+    opacity: 0;
     background-color: #fff;
     box-shadow: 0 2px 5px 0 rgba(0,0,0, 0.4), 
                 0 2px 5px 0 rgba(0,0,0, 0.4);
@@ -270,7 +295,7 @@ box-shadow: 1px 1px 0px #ccc,
     #portfolio-aside #portfolio-main-menu .collapse {
       display: block !important; }
     #portfolio-aside #portfolio-main-menu ul {
-      text-align: center;
+      /* text-align: center; */
       margin: 0;
       padding: 0; }
       @media screen and (max-width: 768px) {
@@ -363,7 +388,12 @@ box-shadow: 1px 1px 0px #ccc,
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .3);
   border-radius: 5px;
 }
+.js-fullheight {
+  height: 100vh;
+}
   .js-fullheight .desc {
+    height: fit-content;
+    margin: auto;
     /* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .3);    */
     border-radius: 5px;
     position: relative;
@@ -462,14 +492,16 @@ box-shadow: 1px 1px 0px #ccc,
     #portfolio-hero .flexslider .flex-direction-nav {
       display: none; }
     #portfolio-hero .flexslider .slider-text {
-      display: table;
+
+      display: flex;
       /* opacity: 0; */
       min-height: 500px;
-      z-index: 9; }
+      z-index: 7; }
       #portfolio-hero .flexslider .slider-text > .slider-text-inner {
-        display: table-cell;
+        margin: auto;
+        display: flex;
         vertical-align: middle;
-        min-height: 700px;
+        min-height: 100vh;
         padding: 2.5em;
         position: relative; }
         @media screen and (max-width: 768px) {
@@ -524,6 +556,9 @@ box-shadow: 1px 1px 0px #ccc,
             color: #000;
             /* border: 1px solid #000; */
             background: transparent !important; }
+            #portfolio-hero .flexslider .slider-text > .slider-text-inner .btn.btn-hire {
+              margin-left: 3em;
+              /* border: 1px solid #000; */ }
             #portfolio-hero .flexslider .slider-text > .slider-text-inner .btn.btn-cv svg {
               color: #f0ad4e;
               /* border: 1px solid #000; */
@@ -551,8 +586,8 @@ body.offcanvas {
     -o-transform: translateX(0);
     transform: translateX(0);
     width: 300px;
-    background: white;
-    z-index: 999;
+    /* background: white; */
+    z-index: 6;
     position: fixed; }
   body.offcanvas #portfolio-main, body.offcanvas .portfolio-nav-toggle {
     top: 0;
@@ -1096,8 +1131,8 @@ body.offcanvas {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #2c98f0;
-    /* opacity: 0; */
+    background: black;
+    opacity: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
@@ -1115,9 +1150,9 @@ body.offcanvas {
           display: inline;
           padding-right: 5px; }
           .project .desc .con .icon span a {
-            color: #333333;
+            color: white;
             padding: 5px;
-            background: rgba(255, 255, 255, 0.5);
+            /* background: rgba(255, 255, 255, 0.5); */
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             -ms-border-radius: 4px;
@@ -1543,9 +1578,9 @@ border: none; }
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 9999;
+  z-index: 6;
   cursor: pointer;
-  background-color: rgb(255, 255, 255, 0.7);
+  background-color: rgb(255, 255, 255, 1);
   border-radius: 0 0 10px 0;
   opacity: 1;
   visibility: hidden;
