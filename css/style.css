@@ -140,41 +140,45 @@ figure {
   max-width: 30vw;
   max-height: 15vw;
   -webkit-box-shadow: 1px 1px 0px #ccc,
-  2px 2px 0px rgba(204, 204, 204, 1),
-  3px 3px 0px rgba(204, 204, 204, 1),
-  4px 4px 0px rgba(204, 204, 204, 1),
-  5px 5px 0px rgba(204, 204, 204, 1),
-  6px 6px 0px rgba(204, 204, 204, 1),
-  7px 7px 0px rgba(204, 204, 204, 1),
-  8px 8px 0px rgba(204, 204, 204, 1),
-  9px 9px 0px rgba(204, 204, 204, 1),
-  10px 10px 0px rgba(204, 204, 204, 1),
+  2px 2px 0px rgba(240, 173, 78, 1),
+  3px 3px 0px rgba(240, 173, 78, 1),
+  4px 4px 0px rgba(240, 173, 78, 1),
+  5px 5px 0px rgba(240, 173, 78, 1),
+  6px 6px 0px rgba(240, 173, 78, 1),
+  7px 7px 0px rgba(240, 173, 78, 1),
+  8px 8px 0px rgba(240, 173, 78, 1),
+  9px 9px 0px rgba(240, 173, 78, 1),
+  10px 10px 0px rgba(240, 173, 78, 1),
   30px 30px 21px 1px rgba(0,0,0,0.5);
--moz-box-shadow: 1px 1px 0px rgba(204, 204, 204, 1),
-2px 2px 0px rgba(204, 204, 204, 1),
-3px 3px 0px rgba(204, 204, 204, 1),
-4px 4px 0px rgba(204, 204, 204, 1),
-5px 5px 0px rgba(204, 204, 204, 1),
-6px 6px 0px rgba(204, 204, 204, 1),
-7px 7px 0px rgba(204, 204, 204, 1),
-8px 8px 0px rgba(204, 204, 204, 1),
-9px 9px 0px rgba(204, 204, 204, 1),
-10px 10px 0px rgba(204, 204, 204, 1),
+-moz-box-shadow: 1px 1px 0px rgba(240, 173, 78, 1),
+2px 2px 0px rgba(240, 173, 78, 1),
+3px 3px 0px rgba(240, 173, 78, 1),
+4px 4px 0px rgba(240, 173, 78, 1),
+5px 5px 0px rgba(240, 173, 78, 1),
+6px 6px 0px rgba(240, 173, 78, 1),
+7px 7px 0px rgba(240, 173, 78, 1),
+8px 8px 0px rgba(240, 173, 78, 1),
+9px 9px 0px rgba(240, 173, 78, 1),
+10px 10px 0px rgba(240, 173, 78, 1),
 30px 30px 21px 1px rgba(0,0,0,0.5);
-box-shadow: 1px 1px 0px rgba(204, 204, 204, 1),
-2px 2px 0px rgba(204, 204, 204, 1),
-3px 3px 0px rgba(204, 204, 204, 1),
-4px 4px 0px rgba(204, 204, 204, 1),
-5px 5px 0px rgba(204, 204, 204, 1),
-6px 6px 0px rgba(204, 204, 204, 1),
-7px 7px 0px rgba(204, 204, 204, 1),
-8px 8px 0px rgba(204, 204, 204, 1),
-9px 9px 0px rgba(204, 204, 204, 1),
-10px 10px 0px rgba(204, 204, 204, 1),
+box-shadow: 1px 1px 0px rgba(240, 173, 78, 1),
+2px 2px 0px rgba(240, 173, 78, 1),
+3px 3px 0px rgba(240, 173, 78, 1),
+4px 4px 0px rgba(240, 173, 78, 1),
+5px 5px 0px rgba(240, 173, 78, 1),
+6px 6px 0px rgba(240, 173, 78, 1),
+7px 7px 0px rgba(240, 173, 78, 1),
+8px 8px 0px rgba(240, 173, 78, 1),
+9px 9px 0px rgba(240, 173, 78, 1),
+10px 10px 0px rgba(240, 173, 78, 1),
 30px 30px 21px 1px rgba(0,0,0,0.5);
 opacity: 1;
 }
 .bgContainer div a {
+  background-image: url(https://i.imgur.com/CYGtZiq.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 0.2s ease-in-out, background-color 0.2s ease;
   height: 100%;
@@ -203,7 +207,7 @@ opacity: 1;
 .bgContainer div a span {
   font-size: 3rem;
   margin: auto;
-  color: black;
+  color: #2c98f0;
   font-family: "Quicksand", Arial, sans-serif;
 }
 @media screen and (max-width: 768px) {
@@ -303,7 +307,7 @@ opacity: 1;
           margin: 0 0 2em 0; } }
       #portfolio-aside #portfolio-main-menu ul li {
         margin: 0 0 10px 0;
-        padding: 0;
+        padding: 0 3rem;
         list-style: none;
         font-size: 12px;
         font-weight: 500;
@@ -557,7 +561,8 @@ opacity: 1;
             /* border: 1px solid #000; */
             background: transparent !important; }
             #portfolio-hero .flexslider .slider-text > .slider-text-inner .btn.btn-hire {
-              margin-left: 3em;
+              /* margin-left: 3em; */
+            margin-bottom: 4em;
               /* border: 1px solid #000; */ }
             #portfolio-hero .flexslider .slider-text > .slider-text-inner .btn.btn-cv svg {
               color: #f0ad4e;
