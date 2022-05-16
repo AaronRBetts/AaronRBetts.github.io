@@ -192,17 +192,17 @@ opacity: 1;
 }
 .bgContainer div:hover {
   background: rgba(255, 255, 255, 0.0) !important;
-  box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.0),
-  2px 2px 0px rgba(255, 255, 255, 0.0),
-  3px 3px 0px rgba(255, 255, 255, 0.0),
-  4px 4px 0px rgba(255, 255, 255, 0.0),
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.0),
+  2px 2px 0px rgba(0, 0, 0, 0.0),
+  3px 3px 0px rgba(0, 0, 0, 0.0),
+  4px 4px 0px rgba(0, 0, 0, 0.0),
   5px 5px 0px rgba(255, 255, 255, 0.0),
   6px 6px 0px rgba(255, 255, 255, 0.0),
   7px 7px 0px rgba(255, 255, 255, 0.0),
   8px 8px 0px rgba(255, 255, 255, 0.0),
   9px 9px 0px rgba(255, 255, 255, 0.0),
   10px 10px 0px rgba(255, 255, 255, 0.0),
-  30px 30px 21px 1px rgba(255,255,255,0.0);
+  10px 10px 70px 1px rgba(0,0,0,0.0);
 }
 .bgContainer div a span {
   font-size: 3rem;
@@ -964,7 +964,7 @@ body.offcanvas {
       display: flex;
       margin: auto; }
   .services .desc {
-    margin-top: 60px; }
+    margin-top: 40px; }
     .services .desc h3 {
       font-size: 16px;
       font-weight: 700;
@@ -1009,30 +1009,30 @@ body.offcanvas {
   position: relative; }
   .portfolio-feature .portfolio-icon {
     margin-top: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    display: table;
-    text-align: center;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    /* width: 100px;
+    height: 100px; */
+    /* display: table; */
+    /* text-align: center; */
     background: white;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     border-radius: 2px; }
+    .portfolio-feature .portfolio-icon p {
+      margin-bottom: 1em;
+     }
     .portfolio-feature .portfolio-icon svg {
       margin: auto;
-      display: table-cell;
-      vertical-align: middle;
+      /* display: table-cell;
+      vertical-align: middle; */
       color: #f0ad4e;
-      font-size: 60px;
-      height: 100px; }
-      @media screen and (max-width: 1200px) {
-        .portfolio-feature .portfolio-icon svg {
-          font-size: 40px; } }
+      /* font-size: 60px; */
+      /* height: 100px; */ }
   .portfolio-feature .portfolio-text {
-    padding-left: 120px;
+    /* padding-left: 120px; */
     width: 100%; }
     .portfolio-feature .portfolio-text h2, .portfolio-feature .portfolio-text h3 {
       margin: 0;
@@ -1044,8 +1044,6 @@ body.offcanvas {
       font-size: 14px;
       letter-spacing: 3px;
       text-transform: uppercase; }
-  .portfolio-feature.portfolio-feature-sm .portfolio-text {
-    margin-top: 30px; }
   .portfolio-feature.portfolio-feature-sm .portfolio-icon i {
     color: #2c98f0;
     font-size: 40px; }
@@ -1136,7 +1134,7 @@ body.offcanvas {
     bottom: 0;
     left: 0;
     right: 0;
-    background: black;
+    background: #f0ad4e;
     opacity: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -1155,20 +1153,22 @@ body.offcanvas {
           display: inline;
           padding-right: 5px; }
           .project .desc .con .icon span a {
-            color: white;
+            color: black;
             padding: 5px;
             /* background: rgba(255, 255, 255, 0.5); */
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             -ms-border-radius: 4px;
             border-radius: 4px; }
+            .project .desc .con .icon span a svg {
+              color: black; }
         .project .desc .con .icon i {
           font-size: 16px;
           color: #333333; }
     .project .desc h3 {
-      font-family: "Quicksand", Arial, sans-serif;
+      font-family: "Playfair Display", Georgia, serif;
       font-size: 16px;
-      font-weight: 500;
+      font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 1px;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -1181,10 +1181,10 @@ body.offcanvas {
       transform: translate3d(0, -15px, 0);
       margin-bottom: 15px; }
       .project .desc h3 a {
-        color: #fff; }
+        color: black; }
     .project .desc span {
       display: block;
-      color: rgba(255, 255, 255, 0.7);
+      color: black;
       font-size: 13px;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
       -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -1199,7 +1199,7 @@ body.offcanvas {
     @media screen and (max-width: 768px) {
       .project .desc {
         opacity: 1;
-        background: rgba(0, 0, 0, 0.9); }
+        background: #f0ad4e; }
         .project .desc h3 {
           font-style: 28px;
           -webkit-transform: translate3d(0, 0, 0);
@@ -1381,7 +1381,7 @@ body.offcanvas {
 
 .btn-primary {
   background: #f0ad4e;
-  color: #fff;
+  color: black;
 border: none; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background: #ad6a0b !important;
