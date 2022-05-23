@@ -341,8 +341,8 @@ opacity: 1;
         margin: 0 0 10px 0;
         padding: 0 3rem;
         list-style: none;
-        font-size: 12px;
-        font-weight: 500;
+        font-size: 2rem;
+        font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 1px; }
         #portfolio-aside #portfolio-main-menu ul li a {
@@ -357,22 +357,22 @@ opacity: 1;
           #portfolio-aside #portfolio-main-menu ul li a:after {
             content: "";
             position: absolute;
-            height: 1px;
+            height: 2px;
             bottom: 7px;
             left: 0;
             right: 0;
-            background-color: #2c98f0;
+            background-color: #f0ad4e;
             visibility: hidden;
             -webkit-transform: scaleX(0);
             -moz-transform: scaleX(0);
             -ms-transform: scaleX(0);
             -o-transform: scaleX(0);
             transform: scaleX(0);
-            -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+            -webkit-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            -moz-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            -ms-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            -o-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
           #portfolio-aside #portfolio-main-menu ul li a:hover {
             text-decoration: none;
             color: black; }
@@ -384,7 +384,7 @@ opacity: 1;
               -o-transform: scaleX(1);
               transform: scaleX(1); }
         #portfolio-aside #portfolio-main-menu ul li.active a {
-          color: #2c98f0; }
+          color: #f0ad4e; }
           #portfolio-aside #portfolio-main-menu ul li.active a:after {
             visibility: visible;
             -webkit-transform: scaleX(1);
@@ -425,7 +425,7 @@ opacity: 1;
   border-radius: 5px;
 }
 .js-fullheight {
-  height: 80vh;
+  /* height: 80vh; */
 }
   .js-fullheight .desc {
     height: fit-content;
@@ -527,17 +527,16 @@ opacity: 1;
     #portfolio-hero .flexslider .flex-direction-nav {
       display: none; }
     #portfolio-hero .flexslider .slider-text {
-
+      margin-top: 20%;
       display: flex;
       /* opacity: 0; */
-      min-height: 500px;
+      min-height: 700px;
       z-index: 7; }
       #portfolio-hero .flexslider .slider-text > .slider-text-inner {
-        margin: auto;
+        /* margin: auto; */
         display: flex;
-        vertical-align: middle;
-        min-height: 100vh;
-        padding: 2.5em;
+        /* vertical-align: middle; */
+        padding: 15px;
         position: relative; }
         @media screen and (max-width: 768px) {
           #portfolio-hero .flexslider .flex-control-nav li:first-child::before {
@@ -563,7 +562,7 @@ opacity: 1;
           font-size: 18px;
           line-height: 1.5;
           margin-bottom: 30px;
-          font-weight: 300;
+          font-weight: 400;
           font-family: "Quicksand", Arial, sans-serif; }
           #portfolio-hero .flexslider .slider-text > .slider-text-inner h2 a {
             color: rgba(44, 152, 240, 0.8);
@@ -1151,30 +1150,39 @@ body.offcanvas {
       color: #2c98f0; }
 
 .project {
-  background-size: contain;
-  background-position: center center;
+  background-size: 85%;
+  background-position: right 0px bottom 80px;
   background-repeat: no-repeat;
   position: relative;
-  height: 300px;
+  height: 600px;
   width: 100%;
   display: block;
   margin-bottom: 30px; }
+  .project span p {
+    font-weight: 500;
+  }
+  .project ul {
+    padding-left: 0;
+  }
+  .project ul li {
+    list-style: none;
+  }
   .project .desc {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #f0ad4e;
+    background: rgba(240, 172, 78, 0.1);
     opacity: 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
     .project .desc .con {
       padding: 20px;
       display: block;
       position: relative;
-      height: 300px; }
+      height: 600px; }
       .project .desc .con .icon {
         position: absolute;
         bottom: 20px;
@@ -1197,7 +1205,7 @@ body.offcanvas {
           font-size: 16px;
           color: #333333; }
     .project .desc h3 {
-      font-family: "Playfair Display", Georgia, serif;
+      font-family: "Quicksand", Arial, sans-serif;
       font-size: 16px;
       font-weight: 800;
       text-transform: uppercase;
@@ -1214,9 +1222,11 @@ body.offcanvas {
       .project .desc h3 a {
         color: black; }
     .project .desc span {
+      z-index: 999;
+      font-family: "Quicksand", Arial, sans-serif;
       display: block;
       color: black;
-      font-size: 13px;
+      font-size: 15px;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
       -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
       transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -1230,7 +1240,7 @@ body.offcanvas {
     @media screen and (max-width: 768px) {
       .project .desc {
         opacity: 1;
-        background: #f0ad4e; }
+        background: rgba(240, 172, 78, 0.1); }
         .project .desc h3 {
           font-style: 28px;
           -webkit-transform: translate3d(0, 0, 0);
