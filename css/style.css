@@ -90,7 +90,9 @@ figure {
 ::selection {
   color: #fff;
   background: #2c98f0; }
-
+.row {
+  overflow: hidden;
+}
 #portfolio-page {
   width: 100%;
   overflow: hidden;
@@ -436,8 +438,6 @@ opacity: 1;
     /* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .3);    */
     border-radius: 5px;
     position: relative;
-    background: rgba(255, 255, 255, .5);
-    overflow: hidden;
     padding: 10px;
   }
   @media screen and (max-width: 768px) {
@@ -446,7 +446,7 @@ opacity: 1;
       border-radius: 5px;  
     }
     .desc {
-      background: rgba(255, 255, 255, .8);
+      /* background: rgba(255, 255, 255, .8); */
     }
   }
   .desc:before {
@@ -1318,11 +1318,12 @@ body.offcanvas {
     font-weight: 700;
     margin-bottom: .3em; }
   .portfolio-counters .portfolio-counter-label {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 24px;
     letter-spacing: 5px;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
+    margin-top: 4em;
     display: block; }
 
 .portfolio-social {
@@ -1549,6 +1550,7 @@ border: none; }
   height: 130px; }
 
 .portfolio-nav-toggle {
+  box-shadow: 4px 0px 10px rgba(0, 0, 0, .5);
   cursor: pointer;
   text-decoration: none; }
   .portfolio-nav-toggle.active i::before, .portfolio-nav-toggle.active i::after {
@@ -1682,3 +1684,277 @@ border: none; }
 
 .js .animate-box {
   opacity: 0; }
+.text-animation {
+  margin:0px;
+  /* text-align:center; */
+  /* color:#fff; */
+  /* font-size:36px; */
+  /* font-weight:100; */
+  margin-bottom: 3rem;
+  overflow:hidden;
+  /* width: 180px; */
+  text-align: left;
+}
+
+.dropping-texts {
+  animation:bg 15s linear infinite;
+  padding-bottom: 20px;
+  display: inline-block;
+  text-align: left;
+  /* vertical-align: -2px; */
+}
+
+.dropping-texts > div {
+  font-size:0px;
+  opacity:0;
+  background-color: white;
+  z-index: -1;
+  /* min-width: 100px; */
+  height: 2em;
+  margin-left:-30px;
+  position:absolute;
+  font-weight: 800;
+  /* box-shadow: 0px 60px 25px -20px rgba(0,0,0,0.5); */
+}
+
+.dropping-texts > div:nth-child(1) {
+  animation: roll 15s linear infinite 0s;
+}
+.dropping-texts > div:nth-child(2) {
+  animation: roll2 15s linear infinite 0s;
+}
+.dropping-texts > div:nth-child(3) {
+  animation: roll3 15s linear infinite 0s;
+}
+.dropping-texts > div:nth-child(4) {
+  animation: roll5 15s linear infinite 0s;
+}
+
+@keyframes roll {
+  0% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(-25deg); */
+  }
+  2% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(0deg); */
+  }
+  23% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(0deg); */
+  }
+  25% {
+    font-size:0px;
+    opacity:0;
+    margin-top:30px;
+    margin-top:0px;
+    /* transform: rotate(15deg); */
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    /* margin-left:-30px; */
+    margin-top:0px;
+    /* transform: rotate(15deg); */
+  }
+}
+
+@keyframes roll2 {
+  0% {
+    font-size:0px;
+    opacity:0;
+    /* margin-left:-30px; */
+    margin-top:0px;
+    /* transform: rotate(-25deg); */
+  }
+  25% {
+    font-size:0px;
+    opacity:0;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(-25deg); */
+  }
+  27% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(0deg); */
+  }
+  48% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(0deg); */
+  }
+  50% {
+    font-size:0px;
+    opacity:0;
+    /* margin-left:-30px; */
+    margin-top:0px;
+    /* transform: rotate(15deg); */
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    /* margin-left:-30px; */
+    margin-top:0px;
+    /* transform: rotate(15deg); */
+  }
+}
+
+@keyframes roll3 {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(-25deg); */
+  }
+  50% {
+    font-size:0px;
+    opacity:0;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(-25deg); */
+  }
+  52% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(0deg); */
+  }
+  73% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(0deg); */
+  }
+  75% {
+    font-size:0px;
+    opacity:0;
+    /* margin-left:-30px; */
+    margin-top:0px;
+    /* transform: rotate(15deg); */
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    /* margin-left:-30px; */
+    margin-top:0px;
+    /* transform: rotate(15deg); */
+  }
+}
+
+@keyframes roll4 {
+  0% {
+    font-size:0px;
+    opacity:0;
+    /* margin-left:-30px; */
+    margin-top:0px;
+    /* transform: rotate(-25deg); */
+  }
+  75% {
+    font-size:0px;
+    opacity:0;
+    /* margin-left:-30px; */
+    margin-top:0px;
+    /* transform: rotate(-25deg); */
+  }
+  80% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(0deg); */
+  }
+  95% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(0deg); */
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    /* margin-left:-30px; */
+    margin-top:0px;
+    /* transform: rotate(15deg); */
+  }
+}
+
+@keyframes roll5 {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(-25deg); */
+  }
+  75% {
+    font-size:0px;
+    opacity:0;
+    /* margin-left:-30px; */
+    margin-top:0px;
+    /* transform: rotate(-25deg); */
+  }
+  77% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    opacity:1;
+    /* transform: rotate(0deg); */
+  }
+  90% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  95% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    /* transform: rotate(0deg); */
+  }
+  97% {
+    font-size:1500px;
+    opacity:0;
+    margin-left:-1000px;
+    margin-top:-800px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    /* margin-left:-30px; */
+    margin-top:0px;
+    /* transform: rotate(15deg); */
+  }
+}
+
+@keyframes bg {
+  0% {color: #ff0075;}
+  24% {color: #ff0075;}
+  25% {color: #0094ff;}
+  49% {color: #0094ff;}
+  50% {color: #b200ff;}
+  74% {color: #b200ff;}
+  75% {color: #8BC34A;}
+  99% {color: #8BC34A;}
+  100% {color: #ff0075;}
+}
