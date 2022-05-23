@@ -273,7 +273,7 @@ opacity: 1;
 #portfolio-aside {
   padding-top: 3em;
   padding-bottom: 40px;
-  float: left;
+  display: flex;
   height: 100vh;
   left: 0;
   width: 300px;
@@ -281,6 +281,8 @@ opacity: 1;
   z-index: 6;
   /* background-position: center; */
       background: url(https://i.imgur.com/yLCa1QW.png);
+      background-size: contain;
+      background-repeat: no-repeat;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -326,6 +328,7 @@ opacity: 1;
       color: #000;
       padding-right: .3em; }
   #portfolio-aside #portfolio-main-menu {
+    align-self: center;
     display: block;
     width: 100%; }
     #portfolio-aside #portfolio-main-menu .collapse {
@@ -1164,6 +1167,13 @@ body.offcanvas {
   .project ul {
     padding-left: 0;
   }
+  .project .desc .stack li a {
+    width: auto;
+    color: #f0ad4e;
+  }
+  .project .desc .stack li svg {
+    font-size: 24px;
+  }
   .project ul li {
     list-style: none;
   }
@@ -1626,14 +1636,14 @@ border: none; }
   top: 0px;
   z-index: 6;
   cursor: pointer;
-  background-color: rgb(255, 255, 255, 1);
-  border-radius: 0 0 10px 0;
+  background-color: #f0ad4e;
+  border-radius: 0 0 50% 0;
   opacity: 1;
   visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 30px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
