@@ -125,7 +125,7 @@ figure {
   display: grid;
   grid-template-areas: 
             ". . . . . . . ."
-            ". . . b b c c ."
+            ". g g b b c c ."
             "a a d d e e f f";
   transform: rotateX(60deg) rotateY(-10deg) rotateZ(40deg) translateY(-60%);
   grid-gap: 5%;
@@ -258,19 +258,23 @@ opacity: 1;
 }
 #bg3{
   grid-area: c;
-  background-image: url(https://i.imgur.com/wJ6ksjb.png);
+  background-image: url(https://i.imgur.com/ntwqY62.png);
 }
 #bg4{
   grid-area: d;
-  background-image: url(https://i.imgur.com/ntwqY62.png);
+  background-image: url(https://i.imgur.com/wJ6ksjb.png);
 }
 #bg5{
   grid-area: e;
-  background-image: url(https://i.imgur.com/G42spoN.png);
+  background-image: url(https://i.imgur.com/lf1D0Kk.jpg);
 }
 #bg6{
   grid-area: f;
   background-image: url(https://i.imgur.com/IaYHZC9.png);
+}
+#bg7{
+  grid-area: g;
+  background-image: url(https://i.imgur.com/G42spoN.png);
 }
 #portfolio-aside {
   padding-top: 3em;
