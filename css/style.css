@@ -118,17 +118,23 @@ figure {
   padding-right: 20px;
 }
 .bgContainer {
+  /* background-color: #f0ad4e; */
+  /* width: 200vw; */
   top: 0;
   right: 0;
   z-index: 8;
+  /* padding-bottom: 20px; */
   position: absolute;
   display: grid;
   grid-template-areas: 
-            ". . . . . . . ."
-            ". g g b b c c ."
-            "a a d d e e f f";
-  transform: rotateX(60deg) rotateY(-10deg) rotateZ(40deg) translateY(-60%);
-  grid-gap: 5%;
+            ". . . . . . h h . ."
+            ". . . g g b b c c ."
+            "i i a a d d e e f f";
+  transform: rotateX(60deg) rotateY(-10deg) rotateZ(40deg) translateY(-90%) translateX(0%);
+  grid-gap: 20px;
+  /* -webkit-box-shadow: 40px 40px 30px 1px rgba(0,0,0,0.2);
+-moz-box-shadow: 40px 40px 30px 1px rgba(0,0,0,0.2);
+box-shadow: 40px 40px 30px 1px rgba(0,0,0,0.2); */
 }
 .bgContainer div {
   transition: opacity 0.2s ease-in-out, box-shadow 0.1s ease;
@@ -144,40 +150,40 @@ figure {
   -webkit-box-shadow: 1px 1px 0px #ccc,
   2px 2px 0px rgba(240, 173, 78, 1),
   3px 3px 0px rgba(240, 173, 78, 1),
-  4px 4px 0px rgba(240, 173, 78, 1),
+  /* 4px 4px 0px rgba(240, 173, 78, 1),
   5px 5px 0px rgba(240, 173, 78, 1),
   6px 6px 0px rgba(240, 173, 78, 1),
   7px 7px 0px rgba(240, 173, 78, 1),
   8px 8px 0px rgba(240, 173, 78, 1),
   9px 9px 0px rgba(240, 173, 78, 1),
-  10px 10px 0px rgba(240, 173, 78, 1),
-  30px 30px 21px 1px rgba(0,0,0,0.5);
+  10px 10px 0px rgba(240, 173, 78, 1), */
+  10px 10px 10px 1px rgba(0,0,0,0.2);
 -moz-box-shadow: 1px 1px 0px rgba(240, 173, 78, 1),
 2px 2px 0px rgba(240, 173, 78, 1),
 3px 3px 0px rgba(240, 173, 78, 1),
-4px 4px 0px rgba(240, 173, 78, 1),
+/* 4px 4px 0px rgba(240, 173, 78, 1),
 5px 5px 0px rgba(240, 173, 78, 1),
 6px 6px 0px rgba(240, 173, 78, 1),
 7px 7px 0px rgba(240, 173, 78, 1),
 8px 8px 0px rgba(240, 173, 78, 1),
 9px 9px 0px rgba(240, 173, 78, 1),
-10px 10px 0px rgba(240, 173, 78, 1),
-30px 30px 21px 1px rgba(0,0,0,0.5);
+10px 10px 0px rgba(240, 173, 78, 1), */
+10px 10px 10px 1px rgba(0,0,0,0.2);
 box-shadow: 1px 1px 0px rgba(240, 173, 78, 1),
 2px 2px 0px rgba(240, 173, 78, 1),
 3px 3px 0px rgba(240, 173, 78, 1),
-4px 4px 0px rgba(240, 173, 78, 1),
+/* 4px 4px 0px rgba(240, 173, 78, 1),
 5px 5px 0px rgba(240, 173, 78, 1),
 6px 6px 0px rgba(240, 173, 78, 1),
 7px 7px 0px rgba(240, 173, 78, 1),
 8px 8px 0px rgba(240, 173, 78, 1),
 9px 9px 0px rgba(240, 173, 78, 1),
-10px 10px 0px rgba(240, 173, 78, 1),
-30px 30px 21px 1px rgba(0,0,0,0.5);
+10px 10px 0px rgba(240, 173, 78, 1), */
+10px 10px 10px 1px rgba(0,0,0,0.2);
 opacity: 1;
 }
 .bgContainer div a {
-  background-image: url(https://i.imgur.com/CYGtZiq.png);
+  /* background-image: url(https://i.imgur.com/CYGtZiq.png); */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -209,7 +215,7 @@ opacity: 1;
 .bgContainer div a span {
   font-size: 3rem;
   margin: auto;
-  color: #2c98f0;
+  color: #000;
   font-family: "Quicksand", Arial, sans-serif;
 }
 @media screen and (max-width: 768px) {
@@ -275,6 +281,14 @@ opacity: 1;
 #bg7{
   grid-area: g;
   background-image: url(https://i.imgur.com/G42spoN.png);
+}
+#bg8{
+  grid-area: h;
+  background-image: url(https://i.imgur.com/lf1D0Kk.jpg);
+}
+#bg9{
+  grid-area: i;
+  background-image: url(https://i.imgur.com/6p5t4tL.png);
 }
 #portfolio-aside {
   padding-top: 3em;
