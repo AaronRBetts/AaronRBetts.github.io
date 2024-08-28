@@ -300,7 +300,7 @@ opacity: 1;
   position: fixed;
   z-index: 6;
   /* background-position: center; */
-      background: url(https://i.imgur.com/yLCa1QW.png);
+      /* background: url(https://i.imgur.com/yLCa1QW.png); */
       background-size: contain;
       background-repeat: no-repeat;
   -webkit-transition: 0.5s;
