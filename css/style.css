@@ -92,6 +92,7 @@ figure {
   background: #2c98f0; }
 .row {
   overflow: hidden;
+  text-align: center;
 }
 #portfolio-page {
   width: 100%;
@@ -926,7 +927,7 @@ body.offcanvas {
   filter: alpha(opacity=40);
   font-size: 16px; }
 
-.services {
+.pricing {
   margin-bottom: 30px;
   padding: 1.5em;
   -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
@@ -937,51 +938,51 @@ body.offcanvas {
   border-bottom: 2px solid #f9bf3f;
   height: 270px;
   transition: height 0.3s ease-in-out; }
-  .services .icon2 {
+  .pricing .icon2 {
     display: block;
     margin-bottom: 20px; }
-    .services .icon2 i {
+    .pricing .icon2 i {
       font-size: 30px;
       color: #f9bf3f; }
-  .services h3 {
-    font-family: "Quicksand", Arial, sans-serif;
+  .pricing h3 {
+    /* font-family: "Quicksand", Arial, sans-serif; */
     font-size: 16px;
     font-weight: 500; }
-  .services.color-2 {
+  .pricing.color-2 {
     border-bottom: 2px solid #f9bf3f; }
-    .services.color-2 .icon2 i {
+    .pricing.color-2 .icon2 i {
       color: #f9bf3f; }
-  .services.color-3 {
+  .pricing.color-3 {
     border-bottom: 2px solid #f9bf3f; }
-    .services.color-3 .icon2 i {
+    .pricing.color-3 .icon2 i {
       color: #f9bf3f; }
-  .services.color-4 {
+  .pricing.color-4 {
     border-bottom: 2px solid #f9bf3f; }
-    .services.color-4 .icon2 i {
+    .pricing.color-4 .icon2 i {
       color: #f9bf3f; }
-  .services.color-5 {
+  .pricing.color-5 {
     border-bottom: 2px solid #f9bf3f; }
-  .services.color-6 {
+  .pricing.color-6 {
     border-bottom: 2px solid #4054b2; }
 
-.services {
+.pricing {
   margin-bottom: 80px;
   position: relative;
   z-index: 0; }
   @media screen and (max-width: 768px) {
-    .services {
+    .pricing {
       margin-bottom: 4em; } }
-  .services ul {
+  .pricing ul {
     padding: 0;
   }
-  .services li {
+  .pricing li {
     list-style: none;
     transition: color 0.2s ease-in-out;
   }
-  .services li:hover {
+  .pricing li:hover {
     color: orange;
   }
-  .services .icon {
+  .pricing .icon {
     position: absolute;
     top: -15px;
     left: 0;
@@ -990,12 +991,12 @@ body.offcanvas {
     height: 50px;
     display: flex;
     background: #f9bf3f; }
-    .services .icon:before, .services .icon:after {
+    .pricing .icon:before, .pricing .icon:after {
       position: absolute;
       left: 0;
       right: 0;
       content: ''; }
-    .services .icon:before {
+    .pricing .icon:before {
       display: none;
       top: -30px;
       width: 0;
@@ -1003,54 +1004,54 @@ body.offcanvas {
       border-style: solid;
       border-width: 0 50px 30px 50px;
       border-color: transparent transparent #f9bf3f transparent; }
-    .services .icon:after {
+    .pricing .icon:after {
       bottom: -20px;
       width: 0;
       height: 0;
       border-style: solid;
       border-width: 20px 50px 0 50px;
       border-color: #f9bf3f transparent transparent transparent; }
-    .services .icon i {
+    .pricing .icon i {
       font-size: 30px;
       color: #fff;
       z-index: 1;
       display: flex;
       margin: auto; }
-  .services .desc {
+  .pricing .desc {
     margin-top: 40px; }
-    .services .desc h3 {
+    .pricing .desc h3 {
       font-size: 16px;
       font-weight: 700;
       text-transform: uppercase; }
-  .services.color-2 .icon {
+  .pricing.color-2 .icon {
     background: #f9bf3f; }
-    .services.color-2 .icon:before {
+    .pricing.color-2 .icon:before {
       border-color: transparent transparent #f9bf3f transparent; }
-    .services.color-2 .icon:after {
+    .pricing.color-2 .icon:after {
       border-color: #f9bf3f transparent transparent transparent; }
-  .services.color-3 .icon {
+  .pricing.color-3 .icon {
     background: #f9bf3f; }
-    .services.color-3 .icon:before {
+    .pricing.color-3 .icon:before {
       border-color: transparent transparent #f9bf3f transparent; }
-    .services.color-3 .icon:after {
+    .pricing.color-3 .icon:after {
       border-color: #f9bf3f transparent transparent transparent; }
-  .services.color-4 .icon {
+  .pricing.color-4 .icon {
     background: #f9bf3f; }
-    .services.color-4 .icon:before {
+    .pricing.color-4 .icon:before {
       border-color: transparent transparent #f9bf3f transparent; }
-    .services.color-4 .icon:after {
+    .pricing.color-4 .icon:after {
       border-color: #f9bf3f transparent transparent transparent; }
-  .services.color-5 .icon {
+  .pricing.color-5 .icon {
     background: #f9bf3f; }
-    .services.color-5 .icon:before {
+    .pricing.color-5 .icon:before {
       border-color: transparent transparent #f9bf3f transparent; }
-    .services.color-5 .icon:after {
+    .pricing.color-5 .icon:after {
       border-color: #f9bf3f transparent transparent transparent; }
-  .services.color-6 .icon {
+  .pricing.color-6 .icon {
     background: #4054b2; }
-    .services.color-6 .icon:before {
+    .pricing.color-6 .icon:before {
       border-color: transparent transparent #4054b2 transparent; }
-    .services.color-6 .icon:after {
+    .pricing.color-6 .icon:after {
       border-color: #4054b2 transparent transparent transparent; }
 
 
@@ -1203,7 +1204,7 @@ body.offcanvas {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(240, 172, 78, 0.1);
+    background: rgba(240, 172, 78, 0.0);
     opacity: 0;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
