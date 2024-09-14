@@ -123,6 +123,9 @@ figure {
   background-repeat: no-repeat;
   background-image: url("https://i.imgur.com/89n0f80.png");
 }
+#navbar{
+  text-align: left;
+}
 .bgContainer {
   /* background-color: #f0ad4e; */
   /* width: 200vw; */
@@ -674,6 +677,7 @@ body.offcanvas {
 .portfolio-experience,
 .portfolio-skills,
 .portfolio-education,
+.services,
 .portfolio-blog,
 .portfolio-work,
 .portfolio-about,
