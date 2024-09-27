@@ -319,7 +319,7 @@ opacity: 1;
     #portfolio-aside {
       width: 300px;
       background-repeat: round;
-      background: url(https://i.imgur.com/yLCa1QW.png);
+      /* background: url(https://i.imgur.com/yLCa1QW.png); */
       -moz-transform: translateX(-300px);
       -webkit-transform: translateX(-300px);
       -ms-transform: translateX(-300px);
