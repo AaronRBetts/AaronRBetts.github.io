@@ -205,13 +205,16 @@
     left: 0;
     clip-path: circle(calc(6.25rem + 7.5vw) at 0% 0%);
  }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .card .tl, .card .tr {
       z-index: 200;
       padding-left: 0rem;
       padding-right: 0rem;
       padding-bottom: 5rem;
    }
+   .grid-offer {
+     display: block;
+  }
     .card .br, .card .bl {
       z-index: 200;
       padding-left: 0rem;
