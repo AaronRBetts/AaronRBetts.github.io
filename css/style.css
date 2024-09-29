@@ -54,7 +54,12 @@ a {
 .svg-inline--fa {
   color: #f0ad4e;
 }
-
+hr {
+  
+  color: #f0ad4e;
+  box-shadow: 0 0.5px 0 #f0ad4e; 
+  border-bottom: 0.5px  #f0ad4e;
+}
 p {
   margin-bottom: 1.5em; }
 
@@ -92,7 +97,7 @@ figure {
   background: #2c98f0; }
 .row {
   overflow: hidden;
-  text-align: center;
+  text-align: left;
 }
 #portfolio-page {
   width: 100%;
