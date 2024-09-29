@@ -1485,6 +1485,14 @@ body.offcanvas {
   background: #f0ad4e;
   color: black;
 border: none; }
+#sales-hook {
+  text-align: center;
+}
+#sales-hook a {
+  padding: 14px;
+  
+  color: black !important;
+}
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background: #ad6a0b !important;
     border-color: #ad6a0b !important; }
