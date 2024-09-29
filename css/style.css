@@ -54,11 +54,26 @@ a {
 .svg-inline--fa {
   color: #f0ad4e;
 }
+
 hr {
-  
-  color: #f0ad4e;
-  box-shadow: 0 0.5px 0 #f0ad4e; 
-  border-bottom: 0.5px  #f0ad4e;
+  border: none;
+  border-bottom: 2px solid #f0ac4ea6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+  /* border: transparent; */
+  background: white;
+  font-weight: 400;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; 
 }
 p {
   margin-bottom: 1.5em; }
