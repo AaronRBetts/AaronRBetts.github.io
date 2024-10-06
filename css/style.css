@@ -31,6 +31,13 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
   border: 3px solid var(--scrollbarBG);
 }
+section {
+  
+  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border-bottom: 2px solid #f9bf3f;
+  margin-block: 2rem;
+}
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
@@ -111,6 +118,8 @@ figure {
   color: #fff;
   background: #2c98f0; }
 .row {
+  
+  padding: 2rem;
   overflow: hidden;
   text-align: left;
 }
@@ -327,7 +336,7 @@ opacity: 1;
   left: 0;
   width: 300px;
   position: fixed;
-  z-index: 6;
+  /* z-index: 6; */
   /* background-position: center; */
       /* background: url(https://i.imgur.com/yLCa1QW.png); */
       background-size: contain;
@@ -578,12 +587,16 @@ opacity: 1;
             border: 2px solid #2c98f0; }
     #portfolio-hero .flexslider .flex-direction-nav {
       display: none; }
+      #portfolio-hero .flexslider .slider-text-block {
+        height: 50vh;
+      }
     #portfolio-hero .flexslider .slider-text {
-      margin-top: 20%;
+      margin-top: 10%;
       display: flex;
       /* opacity: 0; */
-      min-height: 50vh;
-      z-index: 7; }
+      min-height: 40vh;
+      z-index: 7; 
+    }
       #portfolio-hero .flexslider .slider-text > .slider-text-inner {
         /* margin: auto; */
         display: flex;
@@ -644,7 +657,7 @@ opacity: 1;
             background: transparent !important; }
             #portfolio-hero .flexslider .slider-text > .slider-text-inner .btn.btn-hire {
               /* margin-left: 3em; */
-            margin-bottom: 4em;
+            /* margin-bottom: 4em; */
               /* border: 1px solid #000; */ }
             #portfolio-hero .flexslider .slider-text > .slider-text-inner .btn.btn-cv svg {
               color: #f0ad4e;
@@ -703,8 +716,7 @@ body.offcanvas {
 .portfolio-about,
 .portfolio-services,
 .portfolio-contact {
-  padding-top: 4em;
-  padding-bottom: 9em;
+  padding-top: 1em;
   clear: both;
   width: 100%;
   display: block; }
