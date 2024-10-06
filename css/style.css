@@ -168,7 +168,7 @@ figure {
             ". . . . . . h h . ."
             ". . . g g b b c c ."
             "i i a a d d e e f f";
-  transform: rotateX(60deg) rotateY(-10deg) rotateZ(40deg) translateY(-90%) translateX(0%);
+  transform: rotateX(60deg) rotateY(-10deg) rotateZ(40deg) translateY(-100%) translateX(0%);
   grid-gap: 20px;
   /* -webkit-box-shadow: 40px 40px 30px 1px rgba(0,0,0,0.2);
 -moz-box-shadow: 40px 40px 30px 1px rgba(0,0,0,0.2);
