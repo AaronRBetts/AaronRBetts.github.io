@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 }
 section {
   
-  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   border-bottom: 2px solid #f9bf3f;
   margin-block: 2rem;
@@ -535,7 +535,7 @@ opacity: 1;
 }
 #portfolio-hero {
   min-height: 500px;
-  background: #fff url(https://i.imgur.com/Qvd5Unz.gif) no-repeat center center;
+  background: #fff;
   width: 100%;
   float: left;
   clear: both; }
