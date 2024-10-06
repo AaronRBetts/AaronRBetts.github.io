@@ -130,6 +130,11 @@ figure {
 #myform {
   display: flex;
 }
+.form {
+  margin: 1em;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
 #searchArea {
   height: 100%;
   outline: none;
