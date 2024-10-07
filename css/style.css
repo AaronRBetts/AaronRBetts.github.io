@@ -52,9 +52,9 @@ body {
 
 a {
   color: #2c98f0;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
   a:hover, a:active, a:focus {
     color: #2c98f0;
     outline: none;
@@ -1517,9 +1517,9 @@ body.offcanvas {
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   border-radius: 2px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   padding: 8px 15px !important; }
   .btn.btn-sm {
     padding: 4px 15px !important; }
