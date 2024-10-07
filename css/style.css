@@ -41,7 +41,7 @@ section {
   margin-block: 2rem;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1500px) and (min-width: 768px) {
   #portfolio-main {
     margin-left: auto !important;
     margin-right: 10px !important;
