@@ -40,6 +40,14 @@ section {
   border-bottom: 2px solid #f9bf3f;
   margin-block: 2rem;
 }
+
+@media screen and (max-width: 1500px) {
+  #portfolio-main {
+    margin-left: auto !important;
+    margin-right: 10px !important;
+    width: calc(100% - 300px) !important;
+  }
+}
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
@@ -553,8 +561,8 @@ opacity: 1;
     margin: -20px;
 }
 #portfolio-main {
-  width: calc(100% - 300px);
-  float: right;
+  width: calc(100% - 600px);
+  margin: auto;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -1020,24 +1028,17 @@ body.offcanvas {
     display: block;
     margin-bottom: 20px; }
     .pricing .icon2 i {
-      font-size: 30px;
-      color: #f9bf3f; }
+      font-size: 30px;; }
   .pricing h3 {
     /* font-family: "Quicksand", Arial, sans-serif; */
     font-size: 16px;
     font-weight: 500; }
   .pricing.color-2 {
     border-bottom: 2px solid #f9bf3f; }
-    .pricing.color-2 .icon2 i {
-      color: #f9bf3f; }
   .pricing.color-3 {
     border-bottom: 2px solid #f9bf3f; }
-    .pricing.color-3 .icon2 i {
-      color: #f9bf3f; }
   .pricing.color-4 {
     border-bottom: 2px solid #f9bf3f; }
-    .pricing.color-4 .icon2 i {
-      color: #f9bf3f; }
   .pricing.color-5 {
     border-bottom: 2px solid #f9bf3f; }
   .pricing.color-6 {
@@ -1068,7 +1069,9 @@ body.offcanvas {
     width: 100px;
     height: 50px;
     display: flex;
-    background: #f9bf3f; }
+    background:  url('https://i.imgur.com/Lr2V3ee.jpeg'); 
+    background-size: 300px;
+  }
     .pricing .icon:before, .pricing .icon:after {
       position: absolute;
       left: 0;
@@ -1101,8 +1104,6 @@ body.offcanvas {
       font-size: 16px;
       font-weight: 700;
       text-transform: uppercase; }
-  .pricing.color-2 .icon {
-    background: #f9bf3f; }
     .pricing.color-2 .icon:before {
       border-color: transparent transparent #f9bf3f transparent; }
     .pricing.color-2 .icon:after {
@@ -1113,8 +1114,6 @@ body.offcanvas {
       border-color: transparent transparent #f9bf3f transparent; }
     .pricing.color-3 .icon:after {
       border-color: #f9bf3f transparent transparent transparent; }
-  .pricing.color-4 .icon {
-    background: #f9bf3f; }
     .pricing.color-4 .icon:before {
       border-color: transparent transparent #f9bf3f transparent; }
     .pricing.color-4 .icon:after {
@@ -1533,7 +1532,9 @@ body.offcanvas {
     outline: none !important; }
 
 .btn-primary {
-  background: #f0ad4e;
+  background: url('https://i.imgur.com/Lr2V3ee.jpeg');
+  background-size: cover;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   color: black;
 border: none; }
 #sales-hook {
@@ -1545,8 +1546,11 @@ border: none; }
   color: black !important;
 }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #ad6a0b !important;
-    border-color: #ad6a0b !important; }
+    
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    /* background: #ad6a0b !important;
+    border-color: #ad6a0b !important; */
+  }
   .btn-primary.btn-outline {
     background: transparent; }
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
