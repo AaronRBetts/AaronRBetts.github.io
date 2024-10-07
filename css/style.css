@@ -278,6 +278,15 @@ opacity: 1;
   font-family: "Quicksand", Arial, sans-serif;
 }
 @media screen and (max-width: 768px) {
+  #portfolio-hero .flexslider .slider-text > .slider-text-inner {
+    margin: auto;
+  }
+  #topNav {
+    display: none;
+  }
+  #portfolio-hero .flexslider {
+    background: #f9bf3f !important;
+  }
   .bgContainer div {
     transition: opacity 0.2s ease-in-out, box-shadow 0.1s ease;
     display: flex;
