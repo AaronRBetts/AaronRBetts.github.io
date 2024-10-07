@@ -436,7 +436,7 @@ opacity: 1;
         list-style: none;
         font-size: 15px;
         font-weight: 800;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
         letter-spacing: 1px; }
         #portfolio-aside #portfolio-main-menu ul li a, #topNav li a {
           color: rgba(0, 0, 0, 0.7);
