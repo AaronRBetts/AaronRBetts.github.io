@@ -1267,7 +1267,9 @@ body.offcanvas {
     color: #000; }
     .work-menu span a.active {
       color: #2c98f0; }
-
+.showcase-bg {
+  background: url('https://i.imgur.com/Lr2V3ee.jpeg');
+}
 .project {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -1838,7 +1840,7 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 
 .dropping-texts {
   margin-left: 0.6rem;
-  animation:bg 15s linear infinite;
+  animation:bg 15s linear;
   display: inline-block;
   text-align: left;
   z-index: 8;
@@ -1859,16 +1861,16 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .dropping-texts > div:nth-child(1) {
-  animation: roll 15s linear infinite 0s;
+  animation: roll 15s linear 0s;
 }
 .dropping-texts > div:nth-child(2) {
-  animation: roll2 15s linear infinite 0s;
+  animation: roll2 15s linear 0s;
 }
 .dropping-texts > div:nth-child(3) {
-  animation: roll3 15s linear infinite 0s;
+  animation: roll3 15s linear 0s;
 }
 .dropping-texts > div:nth-child(4) {
-  animation: roll4 15s linear infinite 0s;
+  animation: roll4 15s linear 0s;
 }
 
 @keyframes roll {
