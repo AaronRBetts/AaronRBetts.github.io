@@ -184,6 +184,24 @@ figure {
 #topNav ul li {
   padding-inline: 1em;
 }
+.mobLanding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}  
+
+@media screen and (min-width: 768px) {
+  .mobLanding {
+    display: none;
+  }  
+}
+
+@media screen and (max-width: 768px) {
+  #portfolio-hero {
+    display: none;
+  }  
+}
 .bgContainer {
   /* background-color: #f0ad4e; */
   /* width: 200vw; */
@@ -1758,7 +1776,8 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   top: 0px;
   z-index: 6;
   cursor: pointer;
-  background-color: #f0ad4e;
+  background: url('https://i.imgur.com/Lr2V3ee.jpeg');
+  background-size: cover;
   border-radius: 0 0 20px 0;
   opacity: 1;
   visibility: hidden;
