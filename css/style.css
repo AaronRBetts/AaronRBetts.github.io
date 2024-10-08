@@ -94,7 +94,14 @@ hr {
 }
 p {
   margin-bottom: 1.5em; }
-
+  h1 {
+    
+    font-size: 8rem;
+  }
+  h2 {
+    
+    font-size: 6rem;
+  }
 h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-family: "Quicksand", Georgia, serif;
@@ -678,7 +685,7 @@ opacity: 1;
           margin: 0;
           padding: 0;
           color: black;
-          font-family: "Lilita One", Georgia, serif; }
+          font-family: "Playfair Display", Georgia, serif; }
         #portfolio-hero .flexslider .slider-text > .slider-text-inner h1 {
           margin-bottom: 20px;
           font-size: 60px;
