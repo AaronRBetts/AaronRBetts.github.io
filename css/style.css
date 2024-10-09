@@ -1577,7 +1577,8 @@ body.offcanvas {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  padding: 8px 15px !important; }
+  /* padding: 8px 15px !important;  */
+}
   .btn.btn-sm {
     padding: 4px 15px !important; }
   .btn.btn-md {
@@ -1614,7 +1615,10 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
 
       color: #fff; }
-
+.about-hook-btn {
+  margin: 0;
+  padding: 0;
+}
 .btn-success {
   background: #5cb85c;
   color: #fff;
