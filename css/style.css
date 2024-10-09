@@ -1843,8 +1843,8 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     .row-bottom-padded-sm {
       padding-bottom: 1em; } }
 
-.row-pt-md {
-  padding-top: 3em; }
+/* .row-pt-md {
+  padding-top: 3em; } */
 
 .col-padding {
   padding: 10px !important; }
