@@ -1394,7 +1394,9 @@ body.offcanvas {
     @media screen and (max-width: 768px) {
       .project .desc {
         opacity: 1;
-        background: rgba(240, 172, 78, 0.1); }
+        /* background: rgba(240, 172, 78, 0.1);  */
+        /* background: #f9bf3f; */
+      }
         .project .desc h3 {
           font-style: 28px;
           -webkit-transform: translate3d(0, 0, 0);
