@@ -817,8 +817,9 @@ body.offcanvas {
     .portfolio-about,
     .portfolio-services,
     .portfolio-contact {
-      padding-top: 5em;
-      padding-bottom: 8em; } }
+      /* padding-top: 5em;
+      padding-bottom: 8em;  */
+    } }
 
 
 .author-img {
@@ -1293,6 +1294,17 @@ body.offcanvas {
       color: #2c98f0; }
 .showcase-bg {
   /* background: url('https://i.imgur.com/Lr2V3ee.jpeg'); */
+}
+.headshot-frame {
+
+}
+.headshot-frame img {
+  width: 50vw;
+}
+@media screen and (max-width: 768px) {
+  .headshot-frame img {
+    width: 100%;
+  }
 }
 .project {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
