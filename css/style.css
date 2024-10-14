@@ -195,6 +195,7 @@ figure {
   text-align: left;
 }
 #topNav {
+  display: none;
   background: #f9bf3f;
   margin: 0;
 }
