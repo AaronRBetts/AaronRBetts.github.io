@@ -419,6 +419,7 @@ opacity: 1;
   background-image: url(https://i.imgur.com/6p5t4tL.png);
 }
 #portfolio-aside {
+  z-index: 999;
   padding-top: 3em;
   padding-bottom: 40px;
   display: flex;
