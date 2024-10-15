@@ -169,7 +169,7 @@ figure {
   margin-left: auto;
 }
 #portfolio-page {
-  background: url('https://i.imgur.com/4gclgEC.jpeg');
+  background: url('https://i.imgur.com/rcWYLB3.jpeg');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -1893,8 +1893,11 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 .col-padding {
   padding: 10px !important; }
 
-.js .animate-box {
-  opacity: 0; }
+  .js .animate-box {
+    opacity: 0; }
+    .js .animate-box > div {
+      background-color: white;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);}
 .text-animation {
   margin:0px;
   /* text-align:center; */

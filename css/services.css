@@ -118,9 +118,10 @@
     font-style: normal;
  }
   .card {
+    background: white;
     padding: 1em;
     position: relative;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);
     border-radius: 5px;
  }
   .card::before {
