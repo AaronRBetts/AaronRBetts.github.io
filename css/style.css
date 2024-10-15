@@ -44,6 +44,11 @@ section {
 }
 
 @media screen and (max-width: 1500px) and (min-width: 768px) {
+  
+#portfolio-page {
+  background-size: 1500px !important;
+
+}
   #portfolio-main {
     margin-left: auto !important;
     margin-right: 10px !important;
@@ -164,6 +169,9 @@ figure {
   margin-left: auto;
 }
 #portfolio-page {
+  background: url('https://i.imgur.com/4gclgEC.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%;
   width: 100%;
   overflow: hidden;
   position: relative; }
@@ -636,7 +644,8 @@ opacity: 1;
   clear: both; }
   #portfolio-hero .flexslider {
     /* background: url('https://i.imgur.com/mvdCYSz.png'); */
-    background: url('https://i.imgur.com/1GkIk8v.jpeg');
+    /* background: url('https://i.imgur.com/qkkflFa.jpeg'); */
+    background: none;
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
