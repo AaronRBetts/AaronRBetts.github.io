@@ -831,6 +831,7 @@ body.offcanvas {
 .portfolio-about,
 .portfolio-services,
 .portfolio-contact {
+  background: white;
   padding-top: 1em;
   clear: both;
   width: 100%;
