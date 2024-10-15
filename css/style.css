@@ -1087,11 +1087,11 @@ body.offcanvas {
 .pricing {
   margin-bottom: 30px;
   padding: 1.5em;
-  -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  -ms-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  -o-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);
+  -ms-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);
+  -o-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);
   border-bottom: 2px solid #f9bf3f;
   transition: height 0.3s ease-in-out; }
   .pricing .icon2 {
@@ -1896,8 +1896,7 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   .js .animate-box {
     opacity: 0; }
     .js .animate-box > div {
-      background-color: white;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);}
+      background-color: white;}
 .text-animation {
   margin:0px;
   /* text-align:center; */
