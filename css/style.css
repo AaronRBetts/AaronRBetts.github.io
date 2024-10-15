@@ -5,7 +5,9 @@
   font-weight: normal;
   font-style: normal; } */
 
-  @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap'); */
+
+  @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 /* =======================================================
 *
@@ -157,6 +159,10 @@ figure {
   overflow: hidden;
   text-align: left;
 }
+.landing-hook {
+  width: calc(100% - 300px);
+  margin-left: auto;
+}
 #portfolio-page {
   width: 100%;
   overflow: hidden;
@@ -189,7 +195,7 @@ figure {
 .navbar{
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("https://i.imgur.com/89n0f80.png");
+  /* background-image: url("https://i.imgur.com/89n0f80.png"); */
 }
 #navbar{
   text-align: left;
@@ -628,9 +634,11 @@ opacity: 1;
   float: left;
   clear: both; }
   #portfolio-hero .flexslider {
-    background: url('https://i.imgur.com/mvdCYSz.png');
-    background-position: center;
-    background-size: cover;
+    /* background: url('https://i.imgur.com/mvdCYSz.png'); */
+    background: url('https://i.imgur.com/1GkIk8v.jpeg');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
     border: none;
     z-index: 1;
     margin-bottom: 0; }
@@ -690,7 +698,8 @@ opacity: 1;
     }
       #portfolio-hero .flexslider .slider-text > .slider-text-inner {
         /* margin: auto; */
-        background-color: #f9bf3f;
+        /* background-color: #f9bf3f; */
+        /* background-color: white; */
         display: flex;
         /* vertical-align: middle; */
         padding: 15px;
@@ -706,13 +715,15 @@ opacity: 1;
           margin: 0;
           padding: 0;
           color: black;
-          font-family: "Playfair Display", Georgia, serif; }
+          /* font-family: "Playfair Display", Georgia, serif; */
+          font-family: "Sofia Sans", Georgia, serif; }
         #portfolio-hero .flexslider .slider-text > .slider-text-inner h1 {
           /* margin-bottom: 20px; */
           font-size: 60px;
           line-height: 1.3;
-          background-color: #f9bf3f;
-          font-weight: 400; }
+          /* background-color: #f9bf3f; */
+          /* background-color: white; */
+          font-weight: 100; }
           @media screen and (max-width: 768px) {
             #portfolio-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 28px; } }
@@ -721,7 +732,8 @@ opacity: 1;
           line-height: 1.5; */
           margin-bottom: 30px;
           /* font-weight: 700; */
-          font-family: "Playfair Display", Arial, sans-serif; }
+          /* font-family: "Playfair Display", Georgia, serif; */
+          font-family: "Sofia Sans", Georgia, serif; }
           #portfolio-hero .flexslider .slider-text > .slider-text-inner h2 a {
             color: rgba(44, 152, 240, 0.8);
             border-bottom: 1px solid rgba(44, 152, 240, 0.7); }
