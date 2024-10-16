@@ -62,6 +62,10 @@ body {
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.7); }
   @media screen and (max-width: 992px) {
+  
+    #portfolio-page {
+      background-size: 1000px !important;
+    }
     body {
       font-size: 16px; } }
 
@@ -169,10 +173,11 @@ figure {
   margin-left: auto;
 }
 #portfolio-page {
-  background: url('https://i.imgur.com/rcWYLB3.jpeg');
+  background: url('https://i.imgur.com/hXDTMfo.jpeg');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
+  background-position: top;
   overflow: hidden;
   position: relative; }
 #myform {
@@ -1128,6 +1133,9 @@ body.offcanvas {
   .pricing li {
     list-style: none;
     transition: color 0.2s ease-in-out;
+  }
+  .pricing li p {
+    margin: 0;
   }
   .pricing li:hover {
     color: orange;
