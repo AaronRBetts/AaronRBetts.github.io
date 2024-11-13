@@ -1991,7 +1991,7 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .footer h3 span{
-	color:  teal;
+	color:  #f0ad4e;
 }
 
 /* Footer links */
@@ -2011,7 +2011,7 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .footer .footer-name{
-  color: teal;
+	color:  #f0ad4e;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -2057,7 +2057,7 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .footer .footer-center p a{
-	color:  teal;
+	color:  #f0ad4e;
 	text-decoration: none;;
 }
 
