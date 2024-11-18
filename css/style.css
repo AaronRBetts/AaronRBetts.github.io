@@ -173,6 +173,7 @@ figure {
 .landing-hook {
   width: calc(100% - 300px);
   margin-left: auto;
+  margin-right: 0px;
 }
 #portfolio-page {
   background: url('https://i.imgur.com/DeBi7gu.jpeg');
@@ -606,6 +607,9 @@ opacity: 1;
     padding: 10px;
     padding-right: 8rem;
   }
+  .js-fullheight .desc {
+    font-family: "Host Grotesk", sans-serif;
+  }
   @media screen and (max-width: 768px) {
     .flex-control-nav {
       box-shadow: none;
@@ -642,13 +646,38 @@ opacity: 1;
   background-image: url(../images/mockup.png);
 }
 #portfolio-hero {
+  border-radius: none;
+  background-image: linear-gradient(
+    rgba(255,255,255,0.8),
+    rgba(255,255,255,0.8)
+    ),url('https://images.pexels.com/photos/10020052/pexels-photo-10020052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   margin-top: 0;
-  min-height: 500px;
+  min-height: 100vh;
   border-bottom: none;
   box-shadow: none;
   width: 100%;
   float: left;
-  clear: both; }
+  clear: both;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.2s ease-in-out;
+  animation: animateBgOut forwards 0.3s ease-in-out;
+   }
+  #portfolio-hero:hover {
+    /* transform: scale(1.4); */
+    animation: animateBg forwards 0.3s ease-in-out;
+  }
+  
+  @keyframes animateBg{
+    from { background-size: 150%; }
+    to { background-size: 155%; }
+  }
+  
+  @keyframes animateBgOut{
+    from { background-size: 155%; }
+    to { background-size: 150%; }
+  }
   #portfolio-hero .flexslider {
     /* background: url('https://i.imgur.com/mvdCYSz.png'); */
     /* background: url('https://i.imgur.com/qkkflFa.jpeg'); */
@@ -712,6 +741,9 @@ opacity: 1;
       /* opacity: 0; */
       min-height: 40vh;
       z-index: 7; 
+      /* background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, .3); */
+      margin-right: 10px;
     }
       #portfolio-hero .flexslider .slider-text > .slider-text-inner {
         /* margin: auto; */
@@ -738,7 +770,7 @@ opacity: 1;
         #portfolio-hero .flexslider .slider-text > .slider-text-inner h1 {
           /* margin-bottom: 20px; */
           font-size: 60px;
-          line-height: 1.3;
+          /* line-height: 1.3; */
           /* background-color: #f9bf3f; */
           /* background-color: white; */
           font-weight: 800;
