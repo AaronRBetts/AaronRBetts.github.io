@@ -214,6 +214,7 @@ figure {
   /* background-image: url("https://i.imgur.com/89n0f80.png"); */
 }
 #navbar{
+  margin-top: 2rem;
   text-align: left;
 }
 #topNav {
