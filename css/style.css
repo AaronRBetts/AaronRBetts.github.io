@@ -234,11 +234,13 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  border-radius: 5px;
+  height: 100vh;
   box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2)
                 inset 5px 5px rgba(255, 255, 255, 0.5);
-  /* background: url('https://i.imgur.com/Lr2V3ee.jpeg'); */
+                background-image: linear-gradient(
+                  rgba(255,255,255,0.8),
+                  rgba(255,255,255,0.8)
+                  ),url('https://images.pexels.com/photos/10020052/pexels-photo-10020052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }  
 
 @media screen and (min-width: 768px) {
@@ -640,8 +642,7 @@ opacity: 1;
   transition: 0.5s; }
   @media screen and (max-width: 768px) {
     #portfolio-main {
-      width: 100%;
-      padding: 0 1em; } }
+      width: 100%;} }
 .slide{
   background-image: url(../images/mockup.png);
 }
@@ -669,15 +670,37 @@ opacity: 1;
     animation: animateBg forwards 0.3s ease-in-out;
   }
   
+  @media (max-width: 992px) {
+    #portfolio-hero {
+      animation: animateBgOutM forwards 0.3s ease-in-out;
+       }
+      #portfolio-hero:hover {
+        /* transform: scale(1.4); */
+        animation: animateBgM forwards 0.3s ease-in-out;
+      }
+    
+  }
+
   @keyframes animateBg{
+    from { background-size: 120%; }
+    to { background-size: 125%; }
+  }
+  
+  @keyframes animateBgOut{
+    from { background-size: 125%; }
+    to { background-size: 120%; }
+  }
+
+  @keyframes animateBgM{
     from { background-size: 150%; }
     to { background-size: 155%; }
   }
   
-  @keyframes animateBgOut{
+  @keyframes animateBgOutM{
     from { background-size: 155%; }
     to { background-size: 150%; }
   }
+
   #portfolio-hero .flexslider {
     /* background: url('https://i.imgur.com/mvdCYSz.png'); */
     /* background: url('https://i.imgur.com/qkkflFa.jpeg'); */
@@ -1962,6 +1985,11 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   text-align: left;
   z-index: 8;
   /* vertical-align: -2px; */
+}
+
+.desc h1 {
+  font-family: "Host Grotesk", sans-serif;
+  font-weight: 800;
 }
 
 .dropping-texts > div {
