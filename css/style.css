@@ -1979,12 +1979,18 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .dropping-texts {
-  margin-left: 0.6rem;
+  margin-left: 1em;
   animation:bg 15s linear;
   display: inline-block;
   text-align: left;
   z-index: 8;
   /* vertical-align: -2px; */
+}
+
+@media (max-width: 768px) {
+  .dropping-texts {
+    margin-left: 0.6rem;
+  }
 }
 
 .desc h1 {
