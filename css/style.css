@@ -117,6 +117,9 @@ p {
   }
 
   @media screen and (max-width: 768px){
+    .row .form {
+      margin: 0;
+    }
     .desc h1 {
       padding: 0;
     }
