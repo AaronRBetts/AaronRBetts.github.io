@@ -117,15 +117,23 @@ p {
   }
 
   @media screen and (max-width: 768px){
+    .desc h1 {
+      padding: 0;
+    }
+    p {
+      padding-inline: 20px;
+    }
     .text-animation {
       height: 1.8em;
     }
     h1 {
+      padding-inline: 20px;
       
       font-size: 2rem;
       margin-bottom: 0.2em;
     }
     h2 {
+      padding-inline: 20px;
       
       font-size: 1.5rem;
     }
