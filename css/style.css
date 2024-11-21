@@ -1158,7 +1158,7 @@ body.offcanvas {
   -ms-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid #f9bf3f;
+  /* border-bottom: 2px solid #f9bf3f; */
   transition: height 0.3s ease-in-out; }
   .pricing .icon2 {
     display: block;
@@ -1186,7 +1186,7 @@ body.offcanvas {
   z-index: 0; }
   @media screen and (max-width: 768px) {
     .pricing {
-      margin-bottom: 4em; } }
+      margin-bottom: 0; } }
   .pricing ul {
     padding: 0;
   }
@@ -1935,6 +1935,10 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
       visibility: visible; } }
 
 @media screen and (max-width: 480px) {
+  .row {
+    padding: 0;
+    overflow: visible;
+  }
   .col-xxs-12 {
     float: none;
     width: 100%; } }
